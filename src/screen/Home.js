@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { NavBar, Icon, Carousel, WingBlank } from 'antd-mobile';
+import {Carousel, WingBlank } from 'antd-mobile';
 import '@/assets/style/Home.less';
+import { Link } from 'react-router-dom';
+import Container from '@/screen/Container';
 
 class Home extends Component {
     constructor() {
@@ -8,7 +10,16 @@ class Home extends Component {
         this.state = {
             data: ['BG_html', 'BG_css', 'BG_js', 'BG_vue', 'BG_react'],
             imgHeight: 176,
-            GridData: ['HTML', 'CSS', 'JavaScript', 'HTTP', '前端框架', '前端工具', '后端相关', '移动端'],
+            GridData: [
+                {title: 'HTML', text: 'H', src: 'Html_view'},
+                {title: 'CSS', text: 'C', src: '#'},
+                {title: 'JavaScript', text: 'J', src: '#'},
+                {title: 'HTTP', text: 'H', src: '#'},
+                {title: '前端框架', text: '框', src: '#'},
+                {title: '前端工具', text: '工', src: '#'},
+                {title: '后端相关', text: '后', src: '#'},
+                {title: '移动端', text: '移', src: '#'}
+            ],
             RecommendData: [
                 {title: '表单', desc: '分享方法和思路，让表单与众不同'},
                 {title: '继承', desc: '不理解继承，就无法真正理解JS'},
@@ -36,92 +47,88 @@ class Home extends Component {
     
     render() {
         return (
-        <div className="Home">
-            <div>
-                <NavBar
-                mode="light"
-                icon={<Icon type="left" />}
-                onLeftClick={() => console.log('onLeftClick')}
-                >前端笔记</NavBar>
-            </div>
-            <WingBlank style={{margin: 0}}>
-                <Carousel
-                    autoplay={true}
-                    infinite
-                    style={{margin: 0}}>
-                    {this.state.data.map(val => (
-                        <a
-                        key={val}
-                        href="#"
-                        style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-                        >
-                        <img
-                            src={require(`@/assets/images/${val}.png`)}
-                            alt={`${val}`}
-                            style={{ width: '100%', height: '100%', verticalAlign: 'top' }}
-                            onLoad={() => {
-                                window.dispatchEvent(new Event('resize'));
-                                this.setState({ imgHeight: this.state.imgHeight });
-                            }}
-                        />
-                        </a>
-                    ))}
-                </Carousel>
-            </WingBlank>
-            <div className="GridStyle clearfix">
-                <ul>
-                    {this.state.GridData.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <div></div>
-                                <p>{item}</p>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
-            <div className="Recommend clearfix">
-                <p>专题推荐</p>
-                <ul>
-                    {this.state.RecommendData.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <p>{item.title}</p>
-                                <p>{item.desc}</p>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
-            <div className="Article clearfix">
-                <p>推荐文章</p>
-                <ul>
-                    {this.state.Article.map((item, index) => {
-                        return (
-                            <li key={index} style={{backgroundImage: item.url}}>
-                                <div>
+        <Container>
+            <div className="Home">
+                <WingBlank style={{margin: 0}}>
+                    <Carousel
+                        autoplay={true}
+                        infinite
+                        style={{margin: 0}}>
+                        {this.state.data.map(val => (
+                            <a
+                            key={val}
+                            href="#"
+                            style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}>
+                                <img
+                                    src={require(`@/assets/images/${val}.png`)}
+                                    alt={`${val}`}
+                                    style={{ width: '100%', height: '100%', verticalAlign: 'top' }}
+                                    onLoad={() => {
+                                        window.dispatchEvent(new Event('resize'));
+                                        this.setState({ imgHeight: this.state.imgHeight });
+                                    }}
+                                />
+                            </a>
+                        ))}
+                    </Carousel>
+                </WingBlank>
+                <div className="GridStyle clearfix">
+                    <ul>
+                        {this.state.GridData.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link to={item.src}>
+                                        <div>{item.text}</div>
+                                        <p>{item.title}</p>
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+                <div className="Recommend clearfix">
+                    <p>专题推荐</p>
+                    <ul>
+                        {this.state.RecommendData.map((item, index) => {
+                            return (
+                                <li key={index}>
                                     <p>{item.title}</p>
-                                    <span>{item.tip}</span>
-                                </div>
-                            </li>
-                        )
-                    })}
-                </ul>
+                                    <p>{item.desc}</p>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+                <div className="Article clearfix">
+                    <p>推荐文章</p>
+                    <ul>
+                        {this.state.Article.map((item, index) => {
+                            return (
+                                <li key={index} style={{backgroundImage: item.url}}>
+                                    <div>
+                                        <p>{item.title}</p>
+                                        <span>{item.tip}</span>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+                <div className="category clearfix">
+                    <p>类别推荐</p>
+                    <ul className="clearfix">
+                        {this.state.category.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <p>{item.title}</p>
+                                    <p>{item.num}</p>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
-            <div className="category clearfix">
-                <p>类别推荐</p>
-                <ul className="clearfix">
-                    {this.state.category.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <p>{item.title}</p>
-                                <p>{item.num}</p>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
-        </div>
+        </Container>
         );
     }
 }
