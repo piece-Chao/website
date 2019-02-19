@@ -12,7 +12,7 @@ class Home extends Component {
             imgHeight: 176,
             GridData: [
                 {title: 'HTML', text: 'H', src: 'Html_view'},
-                {title: 'CSS', text: 'C', src: '#'},
+                {title: 'CSS', text: 'C', src: 'Css_view'},
                 {title: 'JavaScript', text: 'J', src: '#'},
                 {title: 'HTTP', text: 'H', src: '#'},
                 {title: '前端框架', text: '框', src: '#'},
