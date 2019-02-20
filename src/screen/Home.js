@@ -13,7 +13,7 @@ class Home extends Component {
             GridData: [
                 {title: 'HTML', text: 'H', src: 'Html_view'},
                 {title: 'CSS', text: 'C', src: 'Css_view'},
-                {title: 'JavaScript', text: 'J', src: '#'},
+                {title: 'JavaScript', text: 'J', src: 'Js_view'},
                 {title: 'HTTP', text: 'H', src: '#'},
                 {title: '前端框架', text: '框', src: '#'},
                 {title: '前端工具', text: '工', src: '#'},

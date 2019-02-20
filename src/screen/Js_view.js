@@ -3,7 +3,7 @@ import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
 
-class Css_view extends React.Component {
+class Js_view extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -37,9 +37,8 @@ class Css_view extends React.Component {
             <Container>
                 <div className="level2">
                     <div className="_desc">
-                        <h2>CSS3</h2>
-                        <p>CSS3 是层叠样式表（Cascading Style Sheets）语言的最新版本，旨在扩展CSS2.1。</p>
-                        <p>它带来了许多期待已久的新特性， 例如圆角、阴影、gradients(渐变) 、transitions(过渡) 与 animations(动画) 。以及新的布局方式，如 multi-columns 、 flexible box 与 grid layouts。实验性特性以浏览器引擎为前缀（vendor-prefixed），应避免在生产环境中使用，或极其谨慎地使用，因为将来它们的语法和语义都有可能被更改。</p>
+                        <h2>es6</h2>
+                        <p>ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</p>
                     </div>
                     <main>
                         <div>
@@ -84,4 +83,4 @@ class Css_view extends React.Component {
     }
 }
 
-export default Css_view;
+export default Js_view;
