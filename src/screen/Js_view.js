@@ -7,27 +7,24 @@ class Js_view extends React.Component {
     constructor() {
         super()
         this.state = {
-            attributeData: [
-                {title: '圆角'},
-                {title: '阴影'},
-                {title: '渐变'},
-                {title: '过渡'},
-                {title: '动画'}
+            arrayData: [
+                {title: 'Array.from()'},
+                {title: 'Array.of()'},
+                {title: 'find()、findIndex()'},
+                {title: 'includes()'},
+                {title: 'entries()、keys()、value()'}
             ],
-            boxData: [
-                {title: '标准盒模型'},
-                {title: 'flex'},
-                {title: 'FBC'},
-                {title: '栅格布局'},
-                {title: '圣杯布局'},
-                {title: '双飞翼布局'}
+            funcData: [
+                {title: '参数的默认值'},
+                {title: 'rest 参数'},
+                {title: '箭头函数'},
+                {title: '尾调用优化'}
             ],
-            questionData: [
-                {title: '垂直居中'},
-                {title: 'position问题'},
-                {title: '配置less、sass'},
-                {title: 'rem、em、px'},
-                {title: '清除浮动'},
+            objData: [
+                {title: '属性的简洁表示法'},
+                {title: '属性的可枚举性和遍历'},
+                {title: 'super 关键字'},
+                {title: '对象的扩展运算符'}
             ]
         }
     }
@@ -37,15 +34,15 @@ class Js_view extends React.Component {
             <Container>
                 <div className="level2">
                     <div className="_desc">
-                        <h2>es6</h2>
+                        <h2>ES6</h2>
                         <p>ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在 2015 年 6 月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</p>
                     </div>
                     <main>
                         <div>
                             <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="CSS3 新特性">
+                                <Accordion.Panel header="数组相关">
                                     <List className="my-list">
-                                        {this.state.attributeData.map((item, index) => {
+                                        {this.state.arrayData.map((item, index) => {
                                             return (
                                                 <List.Item key={index}>{item.title}</List.Item>
                                             )
@@ -54,9 +51,9 @@ class Js_view extends React.Component {
                                 </Accordion.Panel>
                             </Accordion>
                             <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="布局">
+                                <Accordion.Panel header="函数相关">
                                     <List className="my-list">
-                                        {this.state.boxData.map((item, index) => {
+                                        {this.state.funcData.map((item, index) => {
                                             return (
                                                 <List.Item key={index}>{item.title}</List.Item>
                                             )
@@ -67,7 +64,7 @@ class Js_view extends React.Component {
                             <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="常见问题">
                                     <List className="my-list">
-                                        {this.state.questionData.map((item, index) => {
+                                        {this.state.objData.map((item, index) => {
                                             return (
                                                 <List.Item key={index}>{item.title}</List.Item>
                                             )
