@@ -14,9 +14,9 @@ class Home extends Component {
                 {title: 'HTML', text: 'H', src: 'Html_view'},
                 {title: 'CSS', text: 'C', src: 'Css_view'},
                 {title: 'JavaScript', text: 'J', src: 'Js_view'},
-                {title: 'HTTP', text: 'H', src: '#'},
+                {title: 'HTTP', text: 'H', src: 'Http_view'},
+                {title: 'TypeScript', text: 'T', src: '#'},
                 {title: '前端框架', text: '框', src: '#'},
-                {title: '前端工具', text: '工', src: '#'},
                 {title: '后端相关', text: '后', src: '#'},
                 {title: '移动端', text: '移', src: '#'}
             ],
@@ -57,7 +57,7 @@ class Home extends Component {
                         {this.state.data.map(val => (
                             <a
                             key={val}
-                            href="#"
+                            href="/"
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}>
                                 <img
                                     src={require(`@/assets/images/${val}.png`)}
