@@ -16,7 +16,7 @@ class Home extends Component {
                 {title: 'JavaScript', text: 'J', src: 'Js_view'},
                 {title: 'HTTP', text: 'H', src: 'Http_view'},
                 {title: 'TypeScript', text: 'T', src: 'Ts_view'},
-                {title: '前端框架', text: '框', src: '#'},
+                {title: '前端框架', text: '框', src: 'Frame_view'},
                 {title: '后端相关', text: '后', src: '#'},
                 {title: '移动端', text: '移', src: '#'}
             ],
