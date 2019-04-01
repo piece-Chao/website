@@ -16,12 +16,12 @@ class Frame_view extends Component {
                 {title: 'vuex'}
             ],
             reactList: [
-                {title: 'Vue生命周期'},
-                {title: 'Vue响应式原理'},
-                {title: 'Vue动态组件'},
-                {title: 'Axios'},
-                {title: 'vue-router'},
-                {title: 'vuex'}
+                {title: 'react生命周期'},
+                {title: 'react-router'},
+                {title: 'styled-component'},
+                {title: 'fetch'},
+                {title: 'redux'},
+                {title: 'saga'}
             ]
         }
     }

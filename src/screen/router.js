@@ -7,6 +7,7 @@ import Js_view from '@/screen/Js_view';
 import Http_view from '@/screen/Http_view';
 import Ts_view from '@/screen/Ts_view';
 import Frame_view from '@/screen/Frame_view';
+import Java_view from '@/screen/Java_view';
 
 export default class extends React.Component {
     render() {
@@ -19,7 +20,8 @@ export default class extends React.Component {
                 <Route path='/Js_view' component={Js_view}/>
                 <Route path='/Http_view' component={Http_view}/>
                 <Route path='/Ts_view' component={Ts_view}/>
-                <Route path='/Frame_view' component={Frame_view} />
+                <Route path='/Frame_view' component={Frame_view}/>
+                <Route path='/Java_view' component={Java_view}/>
             </div>
         )
     }
