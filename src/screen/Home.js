@@ -17,7 +17,7 @@ class Home extends Component {
                 {title: 'HTTP', text: 'H', src: 'Http_view'},
                 {title: 'TypeScript', text: 'T', src: 'Ts_view'},
                 {title: '前端框架', text: '框', src: 'Frame_view'},
-                {title: '后端相关', text: '后', src: '#'},
+                {title: '后端相关', text: '后', src: 'Java_view'},
                 {title: '移动端', text: '移', src: '#'}
             ],
             RecommendData: [
