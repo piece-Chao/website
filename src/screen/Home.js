@@ -18,7 +18,7 @@ class Home extends Component {
                 {title: 'TypeScript', text: 'T', src: 'Ts_view'},
                 {title: '前端框架', text: '框', src: 'Frame_view'},
                 {title: '后端相关', text: '后', src: 'Java_view'},
-                {title: '移动端', text: '移', src: '#'}
+                {title: '移动端', text: '移', src: 'Mobile_view'}
             ],
             RecommendData: [
                 {title: '表单', desc: '分享方法和思路，让表单与众不同'},
