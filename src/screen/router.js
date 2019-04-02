@@ -8,6 +8,7 @@ import Http_view from '@/screen/Http_view';
 import Ts_view from '@/screen/Ts_view';
 import Frame_view from '@/screen/Frame_view';
 import Java_view from '@/screen/Java_view';
+import Mobile_view from '@/screen/Mobile_view';
 
 export default class extends React.Component {
     render() {
@@ -22,6 +23,7 @@ export default class extends React.Component {
                 <Route path='/Ts_view' component={Ts_view}/>
                 <Route path='/Frame_view' component={Frame_view}/>
                 <Route path='/Java_view' component={Java_view}/>
+                <Route path='/Mobile_view' component={Mobile_view}/>
             </div>
         )
     }
