@@ -21,10 +21,10 @@ class Home extends Component {
                 {title: '移动端', text: '移', src: 'Mobile_view'}
             ],
             RecommendData: [
-                {title: '表单', desc: '分享方法和思路，让表单与众不同'},
-                {title: '继承', desc: '不理解继承，就无法真正理解JS'},
-                {title: 'css效果', desc: '使用css实现的各种效果'},
-                {title: '作用域', desc: '深入理解JS作用域'}
+                {title: '小程序', desc: '从0到1制作一个微信小程序', route: 'Sprogram_view'},
+                {title: '继承', desc: '不理解继承，就无法真正理解JS', route: 'Extend_view'},
+                {title: '排序算法', desc: 'js十大经典排序算法', route: 'Sort_view'},
+                {title: '作用域', desc: '深入理解JS作用域', route: 'Range_view'}
             ],
             Article: [
                 {title: 'CSS Why', url: 'url(https://static.xiaohuochai.site/5af6d386c5c7a22150ec2cf7_20180521131743.jpg?imageView2/2/format/webp)', tip: 'CSS'},
@@ -36,7 +36,7 @@ class Home extends Component {
                 {title: 'HTML', num: '28篇文章'},
                 {title: 'CSS', num: '99篇文章'},
                 {title: 'Mobile', num: '7篇文章'},
-                {title: 'NodiJS', num: '24篇文章'},
+                {title: 'Flutter', num: '24篇文章'},
                 {title: 'Utils', num: '59篇文章'},
                 {title: 'VUE', num: '34篇文章'},
                 {title: 'Javascript', num: '219篇文章'},
@@ -92,8 +92,10 @@ class Home extends Component {
                         {this.state.RecommendData.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <p>{item.title}</p>
-                                    <p>{item.desc}</p>
+                                    <Link to={item.route}>
+                                        <p>{item.title}</p>
+                                        <p>{item.desc}</p>
+                                    </Link>
                                 </li>
                             )
                         })}

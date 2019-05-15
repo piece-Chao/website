@@ -9,6 +9,10 @@ import Ts_view from '@/screen/Ts_view';
 import Frame_view from '@/screen/Frame_view';
 import Java_view from '@/screen/Java_view';
 import Mobile_view from '@/screen/Mobile_view';
+import Extend_view from '@/screen/Extend_view';
+import Range_view from '@/screen/Range_view';
+import Sprogram_view from '@/screen/Sprogram_view';
+import Sort_view from '@/screen/Sort_view';
 
 export default class extends React.Component {
     render() {
@@ -24,6 +28,10 @@ export default class extends React.Component {
                 <Route path='/Frame_view' component={Frame_view}/>
                 <Route path='/Java_view' component={Java_view}/>
                 <Route path='/Mobile_view' component={Mobile_view}/>
+                <Route path='/Extend_view' component={Extend_view}/>
+                <Route path='/Range_view' component={Range_view}/>
+                <Route path='/Sprogram_view' component={Sprogram_view}/>
+                <Route path='/Sort_view' component={Sort_view}/>
             </div>
         )
     }
