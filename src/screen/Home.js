@@ -27,20 +27,20 @@ class Home extends Component {
                 {title: '作用域', desc: '深入理解JS作用域', route: 'Range_view'}
             ],
             Article: [
-                {title: 'CSS Why', url: 'url(https://static.xiaohuochai.site/5af6d386c5c7a22150ec2cf7_20180521131743.jpg?imageView2/2/format/webp)', tip: 'CSS'},
-                {title: '使用余弦定理制作磁盘形状h5音乐播放器', url: 'url(https://static.xiaohuochai.site/5ad5e23fd2e94d2f60e2d9c6_20180521132007.jpg?imageView2/2/format/webp)', tip: 'HTML'},
-                {title: '基于JWT标准的用户认证接口实现', url: 'url(https://static.xiaohuochai.site/5b02978325115949d4b67eae_20180613185146.jpg?imageView2/2/format/webp)', tip: '后端相关'},
-                {title: '深入理解javascript中的事件循环event-loop', url: 'url(https://static.xiaohuochai.site/5ad9d7dc352ca82950939e4f_20180521132239.png?imageView2/2/format/webp)', tip: 'JavaScript'}
+                {title: 'CSS Why', url: 'url(https://static.xiaohuochai.site/5af6d386c5c7a22150ec2cf7_20180521131743.jpg?imageView2/2/format/webp)', tip: 'CSS', src: 'Css_Why_art'},
+                {title: '使用余弦定理制作磁盘形状h5音乐播放器', url: 'url(https://static.xiaohuochai.site/5ad5e23fd2e94d2f60e2d9c6_20180521132007.jpg?imageView2/2/format/webp)', tip: 'HTML', src: 'Css_Why_art'},
+                {title: '基于JWT标准的用户认证接口实现', url: 'url(https://static.xiaohuochai.site/5b02978325115949d4b67eae_20180613185146.jpg?imageView2/2/format/webp)', tip: '后端相关', src: 'Css_Why_art'},
+                {title: '深入理解javascript中的事件循环event-loop', url: 'url(https://static.xiaohuochai.site/5ad9d7dc352ca82950939e4f_20180521132239.png?imageView2/2/format/webp)', tip: 'JavaScript', src: 'Css_Why_art'}
             ],
             category: [
-                {title: 'HTML', num: '28篇文章'},
-                {title: 'CSS', num: '99篇文章'},
-                {title: 'Mobile', num: '7篇文章'},
-                {title: 'Flutter', num: '24篇文章'},
-                {title: 'Utils', num: '59篇文章'},
-                {title: 'VUE', num: '34篇文章'},
-                {title: 'Javascript', num: '219篇文章'},
-                {title: 'React', num: '10篇文章'}
+                {title: 'HTML', num: '28篇文章', src: 'Html_view'},
+                {title: 'CSS', num: '99篇文章', src: 'Css_view'},
+                {title: 'Mobile', num: '7篇文章', src: 'Mobile_view'},
+                {title: 'Flutter', num: '24篇文章', src: '/'},
+                {title: 'HTTP', num: '59篇文章', src: 'Http_view'},
+                {title: 'VUE', num: '34篇文章', src: '/'},
+                {title: 'Javascript', num: '219篇文章', src: 'Js_view'},
+                {title: 'React', num: '10篇文章', src: '/'}
             ]
         }
     }
@@ -107,10 +107,12 @@ class Home extends Component {
                         {this.state.Article.map((item, index) => {
                             return (
                                 <li key={index} style={{backgroundImage: item.url}}>
-                                    <div>
-                                        <p>{item.title}</p>
-                                        <span>{item.tip}</span>
-                                    </div>
+                                    <Link to={item.src}>
+                                        <div>
+                                            <p>{item.title}</p>
+                                            <span>{item.tip}</span>
+                                        </div>
+                                    </Link>
                                 </li>
                             )
                         })}
@@ -122,8 +124,10 @@ class Home extends Component {
                         {this.state.category.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <p>{item.title}</p>
-                                    <p>{item.num}</p>
+                                    <Link to={item.src}>
+                                        <p>{item.title}</p>
+                                        <p>{item.num}</p>
+                                    </Link>
                                 </li>
                             )
                         })}

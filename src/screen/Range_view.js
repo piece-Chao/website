@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/screen/Container';
-import { BlockComponent } from '@/components/BlockComponent';
+import { BlockComponent, Title } from '@/components/SubComponent';
 
 class Range_view extends React.Component {
     constructor() {
@@ -30,7 +30,7 @@ class Range_view extends React.Component {
     render() {
         return(
             <Container>
-                <h3 style={{fontSize: '24px', textAlign: 'center', lineHeight: '36px', marginTop: '10px'}}>作用域专题</h3>
+                <Title title={'作用域专题'} />
                 {
                     this.state.data.map((item, index) => {
                         return (<BlockComponent key={index} route={item.route} title={item.desc}></BlockComponent>)
