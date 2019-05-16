@@ -14,6 +14,7 @@ import Range_view from '@/screen/Range_view';
 import Sprogram_view from '@/screen/Sprogram_view';
 import Sort_view from '@/screen/Sort_view';
 import Css_Why_art from '@/screen/Css_Why_art';
+import Range_art1 from '@/screen/Range_art1';
 
 export default class extends React.Component {
     render() {
@@ -34,6 +35,7 @@ export default class extends React.Component {
                 <Route path='/Sprogram_view' component={Sprogram_view}/>
                 <Route path='/Sort_view' component={Sort_view}/>
                 <Route path='/Css_Why_art' component={Css_Why_art}/>
+                <Route path='/Range_art1' component={Range_art1}/>
             </div>
         )
     }
