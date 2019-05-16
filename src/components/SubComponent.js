@@ -36,7 +36,7 @@ export class Label extends React.Component {
 export class Paragraph extends React.Component {
     render() {
         return(
-            <section style={{textIndent: '2em', margin: '10px 0', lineHeight: '26px', ...this.props.style}}>{this.props.title}</section>
+            <section className='paragraph' style={{textIndent: '2em', margin: '10px 0', lineHeight: '26px', ...this.props.style}}>{this.props.title}</section>
         )
     }
 }

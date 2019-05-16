@@ -17,6 +17,8 @@ import Css_Why_art from '@/screen/Css_Why_art';
 import Range_art1 from '@/screen/Range_art1';
 import Range_art2 from '@/screen/Range_art2';
 import Range_art3 from '@/screen/Range_art3';
+import Range_art4 from '@/screen/Range_art4';
+import Range_art5 from '@/screen/Range_art5';
 
 export default class extends React.Component {
     render() {
@@ -40,6 +42,8 @@ export default class extends React.Component {
                 <Route path='/Range_art1' component={Range_art1}/>
                 <Route path='/Range_art2' component={Range_art2}/>
                 <Route path='/Range_art3' component={Range_art3}/>
+                <Route path='/Range_art4' component={Range_art4}/>
+                <Route path='/Range_art5' component={Range_art5}/>
             </div>
         )
     }
