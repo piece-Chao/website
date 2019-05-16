@@ -10,7 +10,7 @@ class Container extends Component {
                 <NavBar
                 mode="light"
                 icon={window.location.hash === '#/Home' ? '' : <Icon type="left" />}
-                onLeftClick={() => {history.go(-1)}}
+                onLeftClick={window.location.hash === '#/Home' ? () => {} : () => {history.go(-1)}}
                 >前端笔记</NavBar>
             {this.props.children}
             </div>

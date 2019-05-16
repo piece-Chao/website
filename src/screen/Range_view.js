@@ -17,10 +17,10 @@ class Range_view extends React.Component {
                     route: '/Range_art3',
                     desc: '深入理解javascript作用域系列第三篇——声明提升(hoisting)'
                 }, {
-                    route: '/',
+                    route: '/Range_art4',
                     desc: '深入理解javascript作用域系列第四篇——块作用域'
                 }, {
-                    route: '/',
+                    route: '/Range_art5',
                     desc: '深入理解javascript作用域系列第五篇——一张图理解执行环境和作用域'
                 }
             ]
