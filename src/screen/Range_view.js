@@ -8,7 +8,7 @@ class Range_view extends React.Component {
         this.state = {
             data: [
                 {
-                    route: '/',
+                    route: 'Range_art1',
                     desc: '深入理解javascript作用域系列第一篇——内部原理'
                 }, {
                     route: '/',
