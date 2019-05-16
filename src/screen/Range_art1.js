@@ -15,8 +15,8 @@ class Range_art1 extends React.Component {
                     <Paragraph style={{textIndent: '0'}} title={'【1】分词(tokenizing)'} />
                     <Paragraph title={'把由字符组成的字符串分解成有意义的代码块，这些代码块被称为词法单元(token)'} />
                     <Paragraph title={'var a = 2;被分解成为下面这些词法单元：var、a、=、2、;。这些词法单元组成了一个词法单元流数组'} />
-<CodeBlock content={`
-// 词法分析后的结果
+<CodeBlock content={
+`// 词法分析后的结果
 [
   "var" : "keyword",
   "a" : "identifier",
@@ -27,8 +27,8 @@ class Range_art1 extends React.Component {
                     <Paragraph style={{textIndent: '0'}} title={'【2】解析(parsing)'} />
                     <Paragraph title={'把词法单元流数组转换成一个由元素逐级嵌套所组成的代表程序语法结构的树，这个树被称为“抽象语法树” (Abstract Syntax Tree, AST)'} />
                     <Paragraph title={'var a = 2;的抽象语法树中有一个叫VariableDeclaration的顶级节点，接下来是一个叫Identifier(它的值是a)的子节点，以及一个叫AssignmentExpression的子节点，且该节点有一个叫Numericliteral(它的值是2)的子节点'} />
-<CodeBlock content={`
-{
+<CodeBlock content={
+`{
     operation: "=",
     left: {
       keyword: "var",
@@ -48,8 +48,8 @@ class Range_art1 extends React.Component {
                     <Paragraph title={'1、编译器查找作用域是否已经有一个名称为a的变量存在于同一个作用域的集合中。如果是，编译器会忽略该声明，继续进行编译；否则它会要求作用域在当前作用域的集合中声明一个新的变量，并命名为a'} />
                     <Paragraph title={'2、编译器将var a = 2;这个代码片段编译成用于执行的机器指令'} />
                     <Paragraph title={'注意：依据编译器的编译原理，javascript中的重复声明是合法的'} />
-<CodeBlock content={`
-//test在作用域中首次出现，所以声明新变量，并将20赋值给test
+<CodeBlock content={
+`//test在作用域中首次出现，所以声明新变量，并将20赋值给test
 var test = 20;
 //test在作用域中已经存在，直接使用，将20的赋值替换成30
 var test = 30;`} />
@@ -60,8 +60,8 @@ var test = 30;`} />
                     <Paragraph title={'在引擎执行的第一步操作中，对变量a进行了查询，这种查询叫做LHS查询。实际上，引擎查询共分为两种：LHS查询和RHS查询 '} />
                     <Paragraph title={'从字面意思去理解，当变量出现在赋值操作的左侧时进行LHS查询，出现在右侧时进行RHS查询'} />
                     <Paragraph title={'更准确地讲，RHS查询与简单地查找某个变量的值没什么区别，而LHS查询则是试图找到变量的容器本身，从而可以对其赋值'} />
-<CodeBlock content={`
-function foo(a){
+<CodeBlock content={
+`function foo(a){
     console.log(a);//2
 }
 foo( 2 );`} />
@@ -72,8 +72,8 @@ foo( 2 );`} />
                     <Paragraph title={'4、console.log(a)对a进行了RHS引用，并把得到的值传给了console.log(...)'} />
                     <Label title={'嵌套'} />
                     <Paragraph title={'在当前作用域中无法找到某个变量时，引擎就会在外层嵌套的作用域中继续查找，直到找到该变量，或抵达最外层的作用域（也就是全局作用域）为止'} />
-<CodeBlock content={`
-function foo(a){
+<CodeBlock content={
+`function foo(a){
     console.log( a + b ) ;
 }
 var b = 2;
@@ -83,38 +83,38 @@ foo(2);// 4`} />
                     <Paragraph title={'为什么区分LHS和RHS是一件重要的事情？因为在变量还没有声明（在任何作用域中都无法找到变量）的情况下，这两种查询的行为不一样'} />
                     <Paragraph style={{textIndent: '0'}} title={'RHS'} />
                     <Paragraph style={{textIndent: '0'}} title={'【1】如果RHS查询失败，引擎会抛出ReferenceError(引用错误)异常'} />
-<CodeBlock content={`
-//对b进行RHS查询时，无法找到该变量。也就是说，这是一个“未声明”的变量
+<CodeBlock content={
+`//对b进行RHS查询时，无法找到该变量。也就是说，这是一个“未声明”的变量
 function foo(a){
     a = b;  
 }
 foo();//ReferenceError: b is not defined`} />
                     <Paragraph style={{textIndent: '0'}} title={'【2】如果RHS查询找到了一个变量，但尝试对变量的值进行不合理操作，比如对一个非函数类型值进行函数调用，或者引用null或undefined中的属性，引擎会抛出另外一种类型异常：TypeError(类型错误)异常'} />
-<CodeBlock content={`
-function foo(){
+<CodeBlock content={
+`function foo(){
     var b = 0;
     b();
 }
 foo();//TypeError: b is not a function`} />
                     <Paragraph style={{textIndent: '0'}} title={'LHS'} />
                     <Paragraph style={{textIndent: '0'}} title={'【1】当引擎执行LHS查询时，如果无法找到变量，全局作用域会创建一个具有该名称的变量，并将其返还给引擎'} />
-<CodeBlock content={`
-function foo(){
+<CodeBlock content={
+`function foo(){
     a = 1;  
 }
 foo();
 console.log(a);//1`} />
                     <Paragraph style={{textIndent: '0'}} title={'【2】如果在严格模式中LHS查询失败时，并不会创建并返回一个全局变量，引擎会抛出同RHS查询失败时类似的ReferenceError异常'} />
-<CodeBlock content={`
-function foo(){
+<CodeBlock content={
+`function foo(){
     'use strict';
     a = 1;  
 }
 foo();
 console.log(a);//ReferenceError: a is not defined`} />
                     <Label title={'原理'} />
-<CodeBlock content={`
-function foo(a){
+<CodeBlock content={
+`function foo(a){
     console.log(a);
 }
 foo(2);`} />
