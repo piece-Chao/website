@@ -259,7 +259,3 @@ s {
 	visibility:hidden;/*让生成的内容不可见*/
 }
 .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
-
-pre {
-    margin-top: 0;
-}
