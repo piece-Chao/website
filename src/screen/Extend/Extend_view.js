@@ -11,10 +11,10 @@ class Extend_view extends React.Component {
                     route: '/Extend_art1',
                     desc: '一张图理解prototype、proto和constructor的三角关系'
                 }, {
-                    route: '/',
+                    route: '/Extend_art2',
                     desc: 'javascript面向对象系列第一篇——构造函数和原型对象'
                 }, {
-                    route: '/',
+                    route: '/Extend_art3',
                     desc: 'javascript面向对象系列第二篇——创建对象的5种模式'
                 }, {
                     route: '/',
