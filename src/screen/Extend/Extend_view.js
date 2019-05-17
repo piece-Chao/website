@@ -17,10 +17,10 @@ class Extend_view extends React.Component {
                     route: '/Extend_art3',
                     desc: 'javascript面向对象系列第二篇——创建对象的5种模式'
                 }, {
-                    route: '/',
+                    route: '/Extend_art4',
                     desc: 'javascript面向对象系列第三篇——实现继承的3种形式'
                 }, {
-                    route: '/',
+                    route: '/Extend_art5',
                     desc: 'javascript面向对象系列第四篇——面向对象的6个概念'
                 }
             ]
