@@ -8,7 +8,7 @@ class Extend_view extends React.Component {
         this.state = {
             data: [
                 {
-                    route: '/',
+                    route: '/Extend_art1',
                     desc: '一张图理解prototype、proto和constructor的三角关系'
                 }, {
                     route: '/',
