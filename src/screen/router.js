@@ -11,6 +11,8 @@ import Java_view from '@/screen/Java_view';
 import Mobile_view from '@/screen/Mobile_view';
 import Extend_view from '@/screen/Extend/Extend_view';
 import Extend_art1 from '@/screen/Extend/Extend_art1';
+import Extend_art2 from '@/screen/Extend/Extend_art2';
+import Extend_art3 from '@/screen/Extend/Extend_art3';
 import Range_view from '@/screen/Range/Range_view';
 import Sprogram_view from '@/screen/Sprogram_view';
 import Sort_view from '@/screen/Sort_view';
@@ -37,6 +39,8 @@ export default class extends React.Component {
                 <Route path='/Mobile_view' component={Mobile_view}/>
                 <Route path='/Extend_view' component={Extend_view}/>
                 <Route path='/Extend_art1' component={Extend_art1}/>
+                <Route path='/Extend_art2' component={Extend_art2}/>
+                <Route path='/Extend_art3' component={Extend_art3}/>
                 <Route path='/Range_view' component={Range_view}/>
                 <Route path='/Sprogram_view' component={Sprogram_view}/>
                 <Route path='/Sort_view' component={Sort_view}/>
