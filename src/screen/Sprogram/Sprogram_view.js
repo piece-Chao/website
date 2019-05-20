@@ -8,7 +8,7 @@ class Sprogram_view extends React.Component {
         this.state = {
             data: [
                 {
-                    route: '/',
+                    route: '/Sprogram_art1',
                     desc: '微信小程序开发(1)：小程序的执行流程是怎么样的？'
                 }, {
                     route: '/',
