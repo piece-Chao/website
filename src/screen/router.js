@@ -24,6 +24,10 @@ import Sort_art3 from '@/screen/Sort/Sort_art3';
 import Sort_art4 from '@/screen/Sort/Sort_art4';
 import Sort_art5 from '@/screen/Sort/Sort_art5';
 import Sort_art6 from '@/screen/Sort/Sort_art6';
+import Sort_art7 from '@/screen/Sort/Sort_art7';
+import Sort_art8 from '@/screen/Sort/Sort_art8';
+import Sort_art9 from '@/screen/Sort/Sort_art9';
+import Sort_art10 from '@/screen/Sort/Sort_art10';
 import Css_Why_art from '@/screen/Css_Why_art';
 import Range_art1 from '@/screen/Range/Range_art1';
 import Range_art2 from '@/screen/Range/Range_art2';
@@ -60,6 +64,10 @@ export default class extends React.Component {
                 <Route path='/Sort_art4' component={Sort_art4}/>
                 <Route path='/Sort_art5' component={Sort_art5}/>
                 <Route path='/Sort_art6' component={Sort_art6}/>
+                <Route path='/Sort_art7' component={Sort_art7}/>
+                <Route path='/Sort_art8' component={Sort_art8}/>
+                <Route path='/Sort_art9' component={Sort_art9}/>
+                <Route path='/Sort_art10' component={Sort_art10}/>
                 <Route path='/Css_Why_art' component={Css_Why_art}/>
                 <Route path='/Range_art1' component={Range_art1}/>
                 <Route path='/Range_art2' component={Range_art2}/>
