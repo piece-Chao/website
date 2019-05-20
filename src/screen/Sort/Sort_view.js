@@ -8,10 +8,10 @@ class Sort_view extends React.Component {
         this.state = {
             data: [
                 {
-                    route: '/',
+                    route: '/Sort_art1',
                     desc: '冒泡排序（Bubble Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art2',
                     desc: '选择排序（Selection Sort）'
                 }, {
                     route: '/',
