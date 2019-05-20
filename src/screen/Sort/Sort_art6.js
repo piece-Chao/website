@@ -50,6 +50,7 @@ function swap(arr, i, j) {
 `} />
                     <Paragraph style={{textIndent: 0, fontWeight: 700}} title={'算法分析'} />
                     <Paragraph title={'"快速排序"（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934--）于1960时提出来的。'} />
+                    <Paragraph title={<p>附：<a href="http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html">阮一峰老师的文章</a></p>} />
                 </div>
             </Container>
         )

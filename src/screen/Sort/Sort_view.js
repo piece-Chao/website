@@ -26,16 +26,16 @@ class Sort_view extends React.Component {
                     route: '/Sort_art6',
                     desc: '快速排序（Quick Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art7',
                     desc: '堆排序（Heap Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art8',
                     desc: '计数排序（Counting Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art9',
                     desc: '桶排序（Bucket Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art10',
                     desc: '基数排序（Radix Sort）'
                 }
             ]
