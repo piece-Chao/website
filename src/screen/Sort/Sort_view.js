@@ -14,16 +14,16 @@ class Sort_view extends React.Component {
                     route: '/Sort_art2',
                     desc: '选择排序（Selection Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art3',
                     desc: '插入排序（Insertion Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art4',
                     desc: '希尔排序（Shell Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art5',
                     desc: '归并排序（Merge Sort）'
                 }, {
-                    route: '/',
+                    route: '/Sort_art6',
                     desc: '快速排序（Quick Sort）'
                 }, {
                     route: '/',
