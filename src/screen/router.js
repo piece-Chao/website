@@ -17,7 +17,9 @@ import Extend_art4 from '@/screen/Extend/Extend_art4';
 import Extend_art5 from '@/screen/Extend/Extend_art5';
 import Range_view from '@/screen/Range/Range_view';
 import Sprogram_view from '@/screen/Sprogram_view';
-import Sort_view from '@/screen/Sort_view';
+import Sort_view from '@/screen/Sort/Sort_view';
+import Sort_art1 from '@/screen/Sort/Sort_art1';
+import Sort_art2 from '@/screen/Sort/Sort_art2';
 import Css_Why_art from '@/screen/Css_Why_art';
 import Range_art1 from '@/screen/Range/Range_art1';
 import Range_art2 from '@/screen/Range/Range_art2';
@@ -48,6 +50,8 @@ export default class extends React.Component {
                 <Route path='/Range_view' component={Range_view}/>
                 <Route path='/Sprogram_view' component={Sprogram_view}/>
                 <Route path='/Sort_view' component={Sort_view}/>
+                <Route path='/Sort_art1' component={Sort_art1}/>
+                <Route path='/Sort_art2' component={Sort_art2}/>
                 <Route path='/Css_Why_art' component={Css_Why_art}/>
                 <Route path='/Range_art1' component={Range_art1}/>
                 <Route path='/Range_art2' component={Range_art2}/>
