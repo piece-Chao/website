@@ -11,7 +11,7 @@ class Sprogram_view extends React.Component {
                     route: '/Sprogram_art1',
                     desc: '微信小程序开发(1)：小程序的执行流程是怎么样的？'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art2',
                     desc: '微信小程序开发(2)：小程序基本介绍'
                 }, {
                     route: '/',
