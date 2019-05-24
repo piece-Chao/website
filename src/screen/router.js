@@ -21,6 +21,9 @@ import Sprogram_art1 from '@/screen/Sprogram/Sprogram_art1';
 import Sprogram_art2 from '@/screen/Sprogram/Sprogram_art2';
 import Sprogram_art3 from '@/screen/Sprogram/Sprogram_art3';
 import Sprogram_art4 from '@/screen/Sprogram/Sprogram_art4';
+import Sprogram_art5 from '@/screen/Sprogram/Sprogram_art5';
+import Sprogram_art6 from '@/screen/Sprogram/Sprogram_art6';
+import Sprogram_art7 from '@/screen/Sprogram/Sprogram_art7';
 import Sort_view from '@/screen/Sort/Sort_view';
 import Sort_art1 from '@/screen/Sort/Sort_art1';
 import Sort_art2 from '@/screen/Sort/Sort_art2';
@@ -65,6 +68,9 @@ export default class extends React.Component {
                 <Route path='/Sprogram_art2' component={Sprogram_art2}/>
                 <Route path='/Sprogram_art3' component={Sprogram_art3}/>
                 <Route path='/Sprogram_art4' component={Sprogram_art4}/>
+                <Route path='/Sprogram_art5' component={Sprogram_art5}/>
+                <Route path='/Sprogram_art6' component={Sprogram_art6}/>
+                <Route path='/Sprogram_art7' component={Sprogram_art7}/>
                 <Route path='/Sort_view' component={Sort_view}/>
                 <Route path='/Sort_art1' component={Sort_art1}/>
                 <Route path='/Sort_art2' component={Sort_art2}/>
