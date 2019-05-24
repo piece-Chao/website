@@ -20,13 +20,13 @@ class Sprogram_view extends React.Component {
                     route: '/Sprogram_art4',
                     desc: '微信小程序开发(4)：打造自己的UI库'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art5',
                     desc: '微信小程序开发(5)：日历组件的实现'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art6',
                     desc: '微信小程序开发(6)：一个业务页面的完成'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art7',
                     desc: '微信小程序开发(7)：列表页面怎么做'
                 }
             ]
