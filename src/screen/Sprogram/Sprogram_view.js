@@ -14,10 +14,10 @@ class Sprogram_view extends React.Component {
                     route: '/Sprogram_art2',
                     desc: '微信小程序开发(2)：小程序基本介绍'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art3',
                     desc: '微信小程序开发(3)：这是一个组件'
                 }, {
-                    route: '/',
+                    route: '/Sprogram_art4',
                     desc: '微信小程序开发(4)：打造自己的UI库'
                 }, {
                     route: '/',
