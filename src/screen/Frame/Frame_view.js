@@ -2,26 +2,27 @@ import React, { Component } from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Frame_view extends Component {
     constructor(props) {
         super(props)
         this.state = {
             vueList: [
-                {title: 'Vue生命周期'},
-                {title: 'Vue响应式原理'},
-                {title: 'Vue动态组件'},
-                {title: 'Axios'},
-                {title: 'vue-router'},
-                {title: 'vuex'}
+                {title: 'Vue生命周期', path: '/'},
+                {title: 'Vue响应式原理',  path: '/'},
+                {title: 'Vue动态组件',  path: '/'},
+                {title: 'Axios',  path: '/'},
+                {title: 'vue-router',  path: '/'},
+                {title: 'vuex',  path: '/'}
             ],
             reactList: [
-                {title: 'react生命周期'},
-                {title: 'react-router'},
-                {title: 'styled-component'},
-                {title: 'fetch'},
-                {title: 'redux'},
-                {title: 'saga'}
+                {title: 'react生命周期',  path: '/'},
+                {title: 'react-router',  path: '/'},
+                {title: 'styled-component',  path: '/'},
+                {title: 'fetch',  path: '/'},
+                {title: 'redux',  path: '/'},
+                {title: 'saga',  path: '/'}
             ]
         }
     }
@@ -43,7 +44,9 @@ class Frame_view extends Component {
                                     <List className="my-list">
                                         {this.state.vueList.map((item, index) => {
                                             return (
-                                                <List.Item key={index}>{item.title}</List.Item>
+                                                <List.Item key={index}>
+                                                    <Link to={item.path}>{item.title}</Link>
+                                                </List.Item>
                                             )
                                         })}
                                     </List>
@@ -54,9 +57,11 @@ class Frame_view extends Component {
                             <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="react">
                                     <List className="my-list">
-                                        {this.state.vueList.map((item, index) => {
+                                        {this.state.reactList.map((item, index) => {
                                             return (
-                                                <List.Item key={index}>{item.title}</List.Item>
+                                                <List.Item key={index}>
+                                                    <Link to={item.path}>{item.title}</Link>
+                                                </List.Item>
                                             )
                                         })}
                                     </List>
