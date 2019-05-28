@@ -6,7 +6,7 @@ import Css_view from '@/screen/Css_view';
 import Js_view from '@/screen/Js_view';
 import Http_view from '@/screen/Http_view';
 import Ts_view from '@/screen/Ts_view';
-import Frame_view from '@/screen/Frame_view';
+import Frame_view from '@/screen/Frame/Frame_view';
 import Java_view from '@/screen/Java_view';
 import Mobile_view from '@/screen/Mobile_view';
 import Extend_view from '@/screen/Extend/Extend_view';
