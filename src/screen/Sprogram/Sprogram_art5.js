@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/screen/Container';
-import { Title, Label, Paragraph, CodeBlock } from '@/components/SubComponent';
+import { Title, Paragraph, CodeBlock } from '@/components/SubComponent';
 
 class Sprogram_art5 extends React.Component {
     render() {
