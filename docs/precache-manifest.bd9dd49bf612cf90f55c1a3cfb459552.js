@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "6996295043963d66e68ad3adc5e0834e",
-    "url": "/static/media/JS_sprogram_art44.69962950.png"
+    "revision": "a147b4ba4159aacc51217e325ab9f220",
+    "url": "/static/media/JS_sprogram_art45.a147b4ba.png"
   },
   {
-    "revision": "d8de3f1544c2bc93508a",
+    "revision": "626c37afc0b8a6331dc3",
     "url": "/static/css/main.00ac54b1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/JS_ECMA_grammer_scope12.84334f8f.jpg"
   },
   {
-    "revision": "8945d80267a35bf5761b",
-    "url": "/static/js/2.8945d802.chunk.js"
+    "revision": "d4d01ba8a7c0be0eac5d",
+    "url": "/static/js/2.d4d01ba8.chunk.js"
   },
   {
     "revision": "f13a2f684b886922da660e324743af14",
@@ -176,12 +176,12 @@ self.__precacheManifest = [
     "url": "/static/media/JS_sprogram_art43.1f7dced7.png"
   },
   {
-    "revision": "d8de3f1544c2bc93508a",
-    "url": "/static/js/main.d8de3f15.chunk.js"
+    "revision": "6996295043963d66e68ad3adc5e0834e",
+    "url": "/static/media/JS_sprogram_art44.69962950.png"
   },
   {
-    "revision": "a147b4ba4159aacc51217e325ab9f220",
-    "url": "/static/media/JS_sprogram_art45.a147b4ba.png"
+    "revision": "626c37afc0b8a6331dc3",
+    "url": "/static/js/main.626c37af.chunk.js"
   },
   {
     "revision": "be4186c592bee3b73a3c56d6ea2f854c",
@@ -268,6 +268,10 @@ self.__precacheManifest = [
     "url": "/static/media/JS_sprogram_art9.60ba8a3e.png"
   },
   {
+    "revision": "f82e5e607696feaadbfb8f8ded54fecc",
+    "url": "/static/media/redux1_2.f82e5e60.png"
+  },
+  {
     "revision": "499cd59ba018dab61df5fcc46d384bb6",
     "url": "/static/media/JS_ECMA_grammer_proto1.499cd59b.jpg"
   },
@@ -348,11 +352,11 @@ self.__precacheManifest = [
     "url": "/static/media/JS_ECMA_grammer_scope11.a3bad575.jpg"
   },
   {
-    "revision": "8945d80267a35bf5761b",
+    "revision": "d4d01ba8a7c0be0eac5d",
     "url": "/static/css/2.f8f647da.chunk.css"
   },
   {
-    "revision": "21e03f97303cad6342b110da65632971",
+    "revision": "bcc8f5958f7cadb07c9bb2d7f35a6431",
     "url": "/index.html"
   }
 ];

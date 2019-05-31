@@ -21,7 +21,7 @@ class Frame_view extends Component {
                 {title: 'react-router',  path: '/'},
                 {title: 'styled-component',  path: '/'},
                 {title: 'fetch',  path: '/'},
-                {title: 'redux',  path: '/'},
+                {title: 'redux',  path: '/React_redux'},
                 {title: 'saga',  path: '/'}
             ]
         }
@@ -60,7 +60,7 @@ class Frame_view extends Component {
                                         {this.state.reactList.map((item, index) => {
                                             return (
                                                 <List.Item key={index}>
-                                                    <Link to={item.path}>{item.title}</Link>
+                                                    <Link style={{display: 'inline-block', width: '100%', height: '100%'}} to={item.path}>{item.title}</Link>
                                                 </List.Item>
                                             )
                                         })}
