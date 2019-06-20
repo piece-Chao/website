@@ -22,7 +22,7 @@ class Frame_view extends Component {
                 {title: 'styled-component',  path: '/'},
                 {title: 'fetch',  path: '/'},
                 {title: 'redux',  path: '/React_redux'},
-                {title: 'saga',  path: '/'}
+                {title: 'saga',  path: '/Redux_saga'}
             ]
         }
     }
