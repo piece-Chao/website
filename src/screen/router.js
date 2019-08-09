@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, withRouter } from 'react-router-dom';
 import Home from '@/screen/Home';
 import Html_view from '@/screen/Html_view';
 import Css_view from '@/screen/Css_view';
@@ -44,10 +44,19 @@ import Range_art3 from '@/screen/Range/Range_art3';
 import Range_art4 from '@/screen/Range/Range_art4';
 import Range_art5 from '@/screen/Range/Range_art5';
 
-export default class extends React.Component {
+class ScrollToTop extends React.Component {
+    componentDidUpdate() {
+        document.body.scrollTo(0, 0)
+    }
+    render() {
+        return this.props.children
+    }
+}
+
+class _Router extends React.Component {
     render() {
         return (
-            <div>
+            <ScrollToTop>
                 <Route exact={true} path='/' render={()=><Redirect to='/Home' />}/>
                 <Route path='/Home' component={Home}/>
                 <Route path='/Html_view' component={Html_view}/>
@@ -92,7 +101,9 @@ export default class extends React.Component {
                 <Route path='/Range_art3' component={Range_art3}/>
                 <Route path='/Range_art4' component={Range_art4}/>
                 <Route path='/Range_art5' component={Range_art5}/>
-            </div>
+            </ScrollToTop>
         )
     }
 }
+
+export default withRouter(_Router)
