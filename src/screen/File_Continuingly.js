@@ -10,7 +10,7 @@ class File_Continuingly extends React.Component {
                     <Title title="文件断点续传" />
                     <Paragraph title={'早就听说过断点续传这种东西，前端也可以实现一下 断点续传在前端的实现主要依赖着HTML5的新特性，所以一般来说在老旧浏览器上支持度是不高的 本文通过断点续传的简单例子（前端文件提交+后端PHP文件接收），理解其大致的实现过程'} />
                     <Paragraph title={'还是先以图片为例，看看最后的样子'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/file_upload1.gif')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/file_upload1.gif')} alt="file_upload1"/>
                     <Label title={'一些知识准备'} />
                     <Paragraph title={'断点续传，既然有断，那就应该有文件分割的过程，一段一段的传。'} />
                     <Paragraph title={'以前文件无法分割，但随着HTML5新特性的引入，类似普通字符串、数组的分割，我们可以可以使用slice方法来分割文件。'} />
@@ -90,7 +90,7 @@ table th {
 </style>`} />
                     <Paragraph style={{textIndent: 0, fontWeight: 700}} title={'2）接下来是JS的实现解析'} />
                     <Paragraph title={'通过FileList对象我们能获取到文件的一些信息'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload2.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload2.png')} alt="file_upload1"/>
                     <Paragraph title={'其中的size就是文件的大小，文件的分分割分片需要依赖这个'} />
                     <Paragraph title={'这里的size是字节数，所以在界面显示文件大小时，可以这样转化'} />
 <CodeBlock content={
@@ -107,7 +107,7 @@ size = file.size > 1024
 // 更新文件信息列表
 uploadItem.push(uploadItemTpl
     .replace(/{{fileName}}/g, file.name)
-    .replace('{{fileType}}', file.type || file.name.match(/\.\w+$/) + '文件')
+    .replace('{{fileType}}', file.type || file.name.match(/\\.\\w+$/) + '文件')
     .replace('{{fileSize}}', size)
     .replace('{{progress}}', progress)
     .replace('{{totalSize}}', file.size)
@@ -124,14 +124,14 @@ if (percent && percent !== '100.0') {
     uploadVal = '继续上传';
 }`} />
                     <Paragraph title={'显示了文件信息列表'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload3.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload3.png')} alt="file_upload1"/>
                     <Paragraph title={'点击开始上传，可以上传相应的文件'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload4.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload4.png')} alt="file_upload1"/>
                     <Paragraph title={'上传文件的时候需要就将文件进行分片分段'} />
                     <Paragraph title={'比如这里配置的每段1024B，总共chunks段（用来判断是否为末段），第chunk段，当前已上传的百分比percent等'} />
                     <Paragraph title={'需要提一下的是这个暂停上传的操作，其实我还没实现出来，暂停不了无奈ing...'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload5.png')} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload6.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload5.png')} alt="file_upload1"/>
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload6.png')} alt="file_upload1"/>
                     <Paragraph title={'接下来是分段过程'} />
 <CodeBlock content={
 `// 设置分片的开始结尾
@@ -157,7 +157,7 @@ if (times === 'first' && isLastChunk === 1) {
     isLastChunk = 0;
 }`} />
                     <Paragraph title={'这个times其实就是个参数，因为要在上一分段传完之后再传下一分段，所以这里的做法是在回调中继续调用这个上传操作'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload7.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload7.png')} alt="file_upload1"/>
                     <Paragraph title={'接下来就是真正的文件上传操作了，用Ajax上传，因为用到了FormData对象，所以不要忘了在$.ajax({}加上这个配置processData: false'} />
                     <Paragraph title={'上传了一个分段，通过返回的结果判断是否上传完毕，是否继续上传'} />
 <CodeBlock content={
@@ -202,7 +202,7 @@ error: function() {
 }`} />
                     <Paragraph title={'继续下一分段的上传时，就进行了递归操作，按顺序地上传下一分段'} />
                     <Paragraph title={'截个图..'} />
-                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload8.png')} />
+                    <img style={{width: '100%'}} src={require('@/assets/images/fileUpload8.png')} alt="file_upload1"/>
                     <Paragraph title={'这是完整的JS逻辑，代码有点儿注释了应该不难看懂吧哈哈'} />
 <CodeBlock content={
 `1     <script type="text/javascript" src="jquery.js"></script>
@@ -258,7 +258,7 @@ error: function() {
 51                     // 更新文件信息列表
 52                     uploadItem.push(uploadItemTpl
 53                         .replace(/{{fileName}}/g, file.name)
-54                         .replace('{{fileType}}', file.type || file.name.match(/\.\w+$/) + '文件')
+54                         .replace('{{fileType}}', file.type || file.name.match(/\\.\\w+$/) + '文件')
 55                         .replace('{{fileSize}}', size)
 56                         .replace('{{progress}}', progress)
 57                         .replace('{{totalSize}}', file.size)
