@@ -37,12 +37,13 @@ import Sort_art7 from '@/screen/Sort/Sort_art7';
 import Sort_art8 from '@/screen/Sort/Sort_art8';
 import Sort_art9 from '@/screen/Sort/Sort_art9';
 import Sort_art10 from '@/screen/Sort/Sort_art10';
-import Css_Why_art from '@/screen/Css_Why_art';
 import Range_art1 from '@/screen/Range/Range_art1';
 import Range_art2 from '@/screen/Range/Range_art2';
 import Range_art3 from '@/screen/Range/Range_art3';
 import Range_art4 from '@/screen/Range/Range_art4';
 import Range_art5 from '@/screen/Range/Range_art5';
+import Css_Why_art from '@/screen/Css_Why_art';
+import File_Continuingly from '@/screen/File_Continuingly';
 
 class ScrollToTop extends React.Component {
     componentDidUpdate() {
@@ -101,6 +102,7 @@ class _Router extends React.Component {
                 <Route path='/Range_art3' component={Range_art3}/>
                 <Route path='/Range_art4' component={Range_art4}/>
                 <Route path='/Range_art5' component={Range_art5}/>
+                <Route path='/File_Continuingly' component={File_Continuingly}/>
             </ScrollToTop>
         )
     }
