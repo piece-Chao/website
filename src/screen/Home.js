@@ -28,7 +28,7 @@ class Home extends Component {
             ],
             Article: [
                 {title: 'CSS Why', url: 'url(https://static.xiaohuochai.site/5af6d386c5c7a22150ec2cf7_20180521131743.jpg?imageView2/2/format/webp)', tip: 'CSS', src: 'Css_Why_art'},
-                {title: '使用余弦定理制作磁盘形状h5音乐播放器', url: 'url(https://static.xiaohuochai.site/5ad5e23fd2e94d2f60e2d9c6_20180521132007.jpg?imageView2/2/format/webp)', tip: 'HTML', src: 'Css_Why_art'},
+                {title: '前端实现断点续传', url: `url(${require('@/assets/images/Home2.jpeg')})`, tip: 'JavaScript', src: 'File_Continuingly'},
                 {title: '基于JWT标准的用户认证接口实现', url: 'url(https://static.xiaohuochai.site/5b02978325115949d4b67eae_20180613185146.jpg?imageView2/2/format/webp)', tip: '后端相关', src: 'Css_Why_art'},
                 {title: '深入理解javascript中的事件循环event-loop', url: 'url(https://static.xiaohuochai.site/5ad9d7dc352ca82950939e4f_20180521132239.png?imageView2/2/format/webp)', tip: 'JavaScript', src: 'Css_Why_art'}
             ],
