@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://www.design2666.com",
+  "homepage": "./",
   "dependencies": {
     "@babel/core": "7.2.2",
     "@babel/preset-env": "^7.3.1",
