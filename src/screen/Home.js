@@ -30,7 +30,7 @@ class Home extends Component {
                 {title: 'CSS Why', url: 'url(https://static.xiaohuochai.site/5af6d386c5c7a22150ec2cf7_20180521131743.jpg?imageView2/2/format/webp)', tip: 'CSS', src: 'Css_Why_art'},
                 {title: '前端实现断点续传', url: `url(${require('@/assets/images/Home2.jpeg')})`, tip: 'JavaScript', src: 'File_Continuingly'},
                 {title: '函数式编程', url: `url(${require('@/assets/images/Home3.jpeg')})`, tip: 'JavaScript', src: 'Functional_Coding'},
-                {title: '深入理解javascript中的事件循环event-loop', url: 'url(https://static.xiaohuochai.site/5ad9d7dc352ca82950939e4f_20180521132239.png?imageView2/2/format/webp)', tip: 'JavaScript', src: 'Css_Why_art'}
+                {title: '搜索引擎优化', url: `url(${require('@/assets/images/SEO.jpeg')})`, tip: 'SEO', src: 'SEO'}
             ],
             category: [
                 {title: 'HTML', num: '28篇文章', src: 'Html_view'},

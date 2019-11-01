@@ -27,7 +27,7 @@ export class Label extends React.Component {
     render() {
         return(
             <div className={'label'}>
-                <p>{this.props.title} <i className={'Lborder'}></i></p>
+                <p><i className={'Lborder'}></i> {this.props.title}</p>
             </div>
         )
     }

@@ -46,6 +46,7 @@ const RangeArt5 = lazy (() => import('@/screen/Range/Range_art5'));
 const CssWhyArt = lazy (() => import('@/screen/Css_Why_art'));
 const FileContinuingly = lazy (() => import('@/screen/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
+const SEO = lazy (() => import('@/screen/SEO'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -108,6 +109,7 @@ class _Router extends Component {
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
+                        <Route path='/SEO' component={props => <SEO {...props} />}/>
                     </Switch>
                 </Suspense>
             </ScrollToTop>
