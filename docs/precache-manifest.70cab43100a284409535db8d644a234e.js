@@ -768,7 +768,7 @@ self.__precacheManifest = [
     "url": "/static/media/file_upload1.8827263e.gif"
   },
   {
-    "revision": "fb4c2dcc99ae7fc38906cb7d2295f14a",
+    "revision": "55f94d4a394102ca08741396d8a03c9e",
     "url": "/index.html"
   }
 ];
