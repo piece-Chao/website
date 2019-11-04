@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
-import { Title, Paragraph, Label, CodeBlock } from '@/components/SubComponent';
+import { Title, Paragraph, Label } from '@/components/SubComponent';
 
 class SEO extends React.Component {
     render () {
@@ -50,12 +50,12 @@ class SEO extends React.Component {
                     <Paragraph style={{fontWeight: 700, textIndent: 0}} title={'2. 提升页面关键词密度'} />
                     <Paragraph title={'首先说个概念，叫关键词密度。简单理解就是关键词在所有文字内容中出现的比例。提升关键词的密度，有利于提升搜索引擎针对对应关键词的搜索排名。但并不是我们整个页面密密麻麻堆砌关键次就好，我们来分析一个案例。'} />
                     <Paragraph title={'我们在百度搜索“北京旅游”，排在第一的是百度旅游，这个就不解释了。排第二位是携程，我们就分析一下为啥携程会排名这么靠前。'} />
-                    <img style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba72de84952e8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
+                    <img alt="" style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba72de84952e8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
                     <Paragraph title={'通过查看百度快照，可以一目了然的看到页面上究竟哪些地方命中了这些词。'} />
                     <Paragraph title={'页面头部'} />
-                    <img style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba731e1b76545?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
+                    <img alt="" style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba731e1b76545?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
                     <Paragraph title={'页面底部'} />
-                    <img style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba73524d92e82?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
+                    <img alt="" style={{width: '100%'}} src="https://user-gold-cdn.xitu.io/2018/6/1/163ba73524d92e82?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" />
                     <Paragraph title={'页面很清晰表明了关键词出现的地方，我们发现这个页面除了正文部分外，还设置了许多的模块，这些模块看似只是一些简单的链接，实际上他们更重要的使命就是服务SEO，提升关键词的密度。同时，这些链接都是指向网站内部的链接，通过这样的方式，还可以在不同的页面之间相互投权重。可以说小链接，大学问！'} />
                     <Paragraph title={'你以为到此结束了？并没有。请仔细观察页面上这些模块的内容设置。分别覆盖了地区、景点、攻略、导航、住宿、交通等等，可以说是涵盖了你要旅游所需要的任何需求。这样一来，不管你搜哪些有关于“北京旅游”的关键词，比如“北京旅游住宿”，“北京特色美食”等都会命中这个页面的词，这使得这个页面的关键词数量得到提升，更容易得到曝光。'} />
                     <Paragraph style={{fontWeight: 700, textIndent: 0}} title={'3. 细枝末节但不可忽视的优化'} />
