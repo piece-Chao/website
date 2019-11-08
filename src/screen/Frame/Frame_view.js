@@ -10,7 +10,7 @@ class Frame_view extends Component {
         this.state = {
             vueList: [
                 {title: 'Vue生命周期', path: '/LifeCycle'},
-                {title: 'Vue响应式原理',  path: '/'},
+                {title: 'Vue响应式原理',  path: '/Responsive'},
                 {title: 'Vue动态组件',  path: '/'},
                 {title: 'Axios',  path: '/'},
                 {title: 'vue-router',  path: '/'},
