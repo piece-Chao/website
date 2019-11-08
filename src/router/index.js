@@ -8,8 +8,8 @@ const JsView = lazy (() => import('@/screen/Js_view'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
-const ReactRedux = lazy (() => import('@/screen/Frame/React_redux'));
-const ReduxSaga = lazy (() => import('@/screen/Frame/Redux_saga'));
+const ReactRedux = lazy (() => import('@/screen/Frame/React/React_redux'));
+const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
 const JavaView = lazy (() => import('@/screen/Java_view'));
 const MobileView = lazy (() => import('@/screen/Mobile_view'));
 const ExtendView = lazy (() => import('@/screen/Extend/Extend_view'));
@@ -47,6 +47,7 @@ const CssWhyArt = lazy (() => import('@/screen/Css_Why_art'));
 const FileContinuingly = lazy (() => import('@/screen/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
 const SEO = lazy (() => import('@/screen/SEO'));
+const LifeCycle = lazy (() => import('@/screen/Frame/Vue/LifeCycle'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -110,6 +111,7 @@ class _Router extends Component {
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/SEO' component={props => <SEO {...props} />}/>
+                        <Route path='/LifeCycle' component={props => <LifeCycle {...props} />}/>
                     </Switch>
                 </Suspense>
             </ScrollToTop>
