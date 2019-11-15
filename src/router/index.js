@@ -10,7 +10,8 @@ const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
 const ReactRedux = lazy (() => import('@/screen/Frame/React/React_redux'));
 const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
-const JavaView = lazy (() => import('@/screen/Java_view'));
+const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
+const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'))
 const MobileView = lazy (() => import('@/screen/Mobile_view'));
 const ExtendView = lazy (() => import('@/screen/Extend/Extend_view'));
 const ExtendArt1 = lazy (() => import('@/screen/Extend/Extend_art1'));
@@ -114,6 +115,7 @@ class _Router extends Component {
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/SEO' component={props => <SEO {...props} />}/>
+                        <Route path='/Nginx_introduction' component={props => <NginxIntroduction {...props} />} />
                     </Switch>
                 </Suspense>
             </ScrollToTop>
