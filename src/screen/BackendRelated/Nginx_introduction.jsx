@@ -8,9 +8,9 @@ class Nginx_introduction extends React.Component {
             <Container>
                 <div style={{padding: '0 10px'}}>
                     <Title title={'nginx入门'} />
-                    <Paragraph title={<p>本文属于翻译文章，原文链接为 <a href="http://nginx.org/en/docs/beginners_guide.html" target="_blank">nginx Beginner’s Guide。</a>是至今为止见过最好的 nginx 入门文章。额。。。没有之一。</p>}></Paragraph>
-                    <Paragraph title={<p>这篇教程简单介绍了 nginx 并且讲解了一些 nginx 可以解决的简单任务。这里，我们假设 nginx 已经安装在读者的机器上。如果没有，可以看一下<a href="http://nginx.org/en/docs/install.html" target="_blank">如何安装 nginx</a>。这篇教程主要讲解的是如何启用和停止nginx，和重新加载配置，描述配置文件的基本结构和怎样搭建一个 nginx 静态辅助器，怎样配置 nginx 作为一个代理服务器来。</p>}></Paragraph>
-                    <Paragraph title={<p>nginx 有一个主进程和其他子进程。主进程的主要工作是加载和执行配置文件，并且驻留子进程。子进程用来作为实际的请求处理。nginx 采取基于事件的模型和 OS 依赖的机制，在多个子进程之间高效的分配请求。子进程的个数会直接写在配置文件中并且，对于给定的配置可以是固定的，或者根据可用的 CPU 核数自动的进行调整（参考 <a href="http://nginx.org/en/docs/ngx_core_module.html#worker_processes" target="_blank">子进程</a>）。</p>}></Paragraph>
+                    <Paragraph title={<p>本文属于翻译文章，原文链接为 <a href="http://nginx.org/en/docs/beginners_guide.html" target="_blank" rel="noopener noreferrer">nginx Beginner’s Guide。</a>是至今为止见过最好的 nginx 入门文章。额。。。没有之一。</p>}></Paragraph>
+                    <Paragraph title={<p>这篇教程简单介绍了 nginx 并且讲解了一些 nginx 可以解决的简单任务。这里，我们假设 nginx 已经安装在读者的机器上。如果没有，可以看一下<a href="http://nginx.org/en/docs/install.html" target="_blank" rel="noopener noreferrer">如何安装 nginx</a>。这篇教程主要讲解的是如何启用和停止nginx，和重新加载配置，描述配置文件的基本结构和怎样搭建一个 nginx 静态辅助器，怎样配置 nginx 作为一个代理服务器来。</p>}></Paragraph>
+                    <Paragraph title={<p>nginx 有一个主进程和其他子进程。主进程的主要工作是加载和执行配置文件，并且驻留子进程。子进程用来作为实际的请求处理。nginx 采取基于事件的模型和 OS 依赖的机制，在多个子进程之间高效的分配请求。子进程的个数会直接写在配置文件中并且，对于给定的配置可以是固定的，或者根据可用的 CPU 核数自动的进行调整（参考 <a href="http://nginx.org/en/docs/ngx_core_module.html#worker_processes" target="_blank" rel="noopener noreferrer">子进程</a>）。</p>}></Paragraph>
                     <Paragraph title={'nginx 和它模块的工作方式是在配置文件中写好的。默认情况下，这个配置文件通常命名为 nginx.conf 并且会放置在 /usr/local/nginx/conf，/etc/nginx，或者 /usr/local/etc/nginx。'}></Paragraph>
                     <Label title={'启用，停止和重载配置'} />
                     <Paragraph title={'运行可执行文件就可以开启 nginx，比如：'}></Paragraph>
@@ -47,14 +47,14 @@ nginx -c /usr/local/nginx/conf/nginx.conf
  1156 ?        S      1:22 nginx: worker process
 27999 ?        Ss     0:00 nginx: master process ./nginx
 `} />
-                    <Paragraph title={<p>更多关于发送信号给 nginx，可以参考 <a href="http://nginx.org/en/docs/ngx_core_module.html#worker_processes" target="_blank">nginx 控制</a>。</p>}></Paragraph>
+                    <Paragraph title={<p>更多关于发送信号给 nginx，可以参考 <a href="http://nginx.org/en/docs/ngx_core_module.html#worker_processes" target="_blank" rel="noopener noreferrer">nginx 控制</a>。</p>}></Paragraph>
                     <Label title={'配置文件结构'} />
                     <Paragraph title={'nginx 是由一些模块组成，我们一般在配置文件中使用一些具体的指令来控制它们。指令被分为简单指令和块级命令。一个简单的指令是由名字和参数组成，中间用空格分开，并以分号结尾。例如：'}></Paragraph>
 <CodeBlock content={
 `// 简单指令
 root /data/www;
 `} />
-                    <Paragraph title={<p>块级指令和简单指令一样有着类似的结构，但是末尾不是分号而是用 {' 和 '} 大括号包裹的额外指令集。如果一个块级指令的大括号里有其他指令，则它被叫做一个上下文（比如：<a href="http://nginx.org/en/docs/ngx_core_module.html#events" target="_blank">events</a>，<a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#httph" target="_blank">http</a>，<a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#servers" target="_blank">server</a>，和 <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#location" target="_blank">location</a>）。</p>}></Paragraph>
+                    <Paragraph title={<p>块级指令和简单指令一样有着类似的结构，但是末尾不是分号而是用 {' 和 '} 大括号包裹的额外指令集。如果一个块级指令的大括号里有其他指令，则它被叫做一个上下文（比如：<a href="http://nginx.org/en/docs/ngx_core_module.html#events" target="_blank" rel="noopener noreferrer">events</a>，<a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#httph" target="_blank" rel="noopener noreferrer">http</a>，<a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#servers" target="_blank" rel="noopener noreferrer">server</a>，和 <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#location" target="_blank" rel="noopener noreferrer">location</a>）。</p>}></Paragraph>
                     <Paragraph title={'在配置文件中，没有放在任何上下文中的指令都是处在主上下文中。events 和 http 的指令是放在主上下文中，server 放在 http 中, location 放在 server 中。'}></Paragraph>
                     <Paragraph title={'以 # 开头的行，会被当做注释。'}></Paragraph>
 <CodeBlock content={
@@ -70,7 +70,7 @@ http {
         access_log   logs/domain1.access.log  main;
         root         html;
 
-        location ~ \.php$ {
+        location ~ \\.php$ {
         fastcgi_pass   127.0.0.1:1025;
         }
     }
@@ -133,7 +133,7 @@ http {
 }
 `} />
                     <Paragraph title={'上面就是一个简单的服务器，它监听在 8080 端口（之前，listen 并没被定义，是因为默认监听的 80 端口）并且会映射所有的请求给 本地文件目录 /data/up1。创建该目录，然后添加 index.html 文件。注意，root 指令是放在 server 上下文中。当响应请求的 location 区块中，没有自己的 root 指令，上述的 root指令才会被使用。'}></Paragraph>
-                    <Paragraph title={<p>接着，使用前面章节中的 server 配置，然后将它改为一个代理服务配置。在第一个 location 区块中，放置已经添加被代理服务器的协议，名字和端口等参数的 <a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass" target="_blank">proxy_pass</a> 指令（在这里，就是 http://localhost:8080）:</p>}></Paragraph>
+                    <Paragraph title={<p>接着，使用前面章节中的 server 配置，然后将它改为一个代理服务配置。在第一个 location 区块中，放置已经添加被代理服务器的协议，名字和端口等参数的 <a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass" target="_blank" rel="noopener noreferrer">proxy_pass</a> 指令（在这里，就是 http://localhost:8080）:</p>}></Paragraph>
 <CodeBlock content={
 `server {
     location / {
@@ -147,7 +147,7 @@ http {
 `} />
                     <Paragraph title={'我们将修改第二个 location 区块，使他返回一些典型后缀的图片文件请求，现在它只会映射带有 /images/ 前缀的请求到 /data/images 目录下。修改后的 location 指令如下：'}></Paragraph>
 <CodeBlock content={
-`location ~ \.(gif|jpg|png)$ {
+`location ~ \\.(gif|jpg|png)$ {
     root /data/images;
 }
 `} />
@@ -160,13 +160,13 @@ http {
         proxy_pass http://localhost:8080/;
     }
 
-    location ~ \.(gif|jpg|png)$ {
+    location ~ \\.(gif|jpg|png)$ {
         root /data/images;
     }
 }
 `} />
                     <Paragraph title={'该服务器会选择以 .gif，.jpg，或者 .png 结束的请求并且映射到 /data/images 目录（通过添加 URI 给 root 指令的参数），接着将其他所有的请求映射到上述被代理的服务器。为了使用新的配置，像前几个章节描述的一样，需要向 nginx 发送重载信号。'}></Paragraph>
-                    <Paragraph title={<p>这还有很多其<a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html" target="_blank">他的指令</a>，可以用于进一步配置代理连接。</p>}></Paragraph>
+                    <Paragraph title={<p>这还有很多其<a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html" target="_blank" rel="noopener noreferrer">他的指令</a>，可以用于进一步配置代理连接。</p>}></Paragraph>
                 </div>
             </Container>
         )
