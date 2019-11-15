@@ -52,3 +52,21 @@ export class CodeBlock extends React.Component {
         )
     }
 }
+
+export class ListItem extends React.Component {
+    render() {
+        return(
+            <div className={'listItem'}>
+                <ul>
+                    {
+                        this.props.list.map((item, index) => {
+                            return (
+                                <li key={index}>{item}</li>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
+        )
+    }
+}

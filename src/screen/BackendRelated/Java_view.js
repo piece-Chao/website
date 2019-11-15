@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Java_view extends Component {
     constructor() {
@@ -27,6 +28,10 @@ class Java_view extends Component {
                 {title: '泛型'},
                 {title: '网络编程'},
                 {title: '序列化'},
+            ],
+            nginxList: [
+                {title: 'nginx入门', path: 'Nginx_introduction'},
+                {title: '前端想要了解的nginx', path: 'Nginx_introduction'}
             ]
         }
     }
@@ -74,6 +79,21 @@ class Java_view extends Component {
                                     {this.state.seniorList.map((item, index) => {
                                         return (
                                             <List.Item key={index}>{item.title}</List.Item>
+                                        )
+                                    })}
+                                    </List>
+                                </Accordion.Panel>
+                            </Accordion>
+                        </div>
+                        <div>
+                            <Accordion defaultActiveKey="0" className="my-accordion">
+                                <Accordion.Panel header="NGINX">
+                                    <List className="my-list">
+                                    {this.state.nginxList.map((item, index) => {
+                                        return (
+                                            <List.Item key={index}>
+                                                <Link to={item.path}>{item.title}</Link>    
+                                            </List.Item>
                                         )
                                     })}
                                     </List>

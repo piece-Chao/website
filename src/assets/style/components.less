@@ -43,3 +43,23 @@
         color: #108ee9;
     }
 }
+
+.listItem {
+    ul {
+        li {
+            line-height: 24px;
+            text-indent: 1em;
+            position: relative;
+        }
+        li:before {
+            content: " ";
+            position: absolute;
+            left: 4px;
+            top: 12px;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background: #000;
+        }
+    }
+}
