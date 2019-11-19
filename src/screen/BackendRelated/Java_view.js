@@ -31,7 +31,7 @@ class Java_view extends Component {
             ],
             nginxList: [
                 {title: 'nginx入门', path: 'Nginx_introduction'},
-                {title: '前端想要了解的nginx', path: 'Nginx_introduction'}
+                {title: '前端想要了解的nginx', path: 'Nginx_basic'}
             ]
         }
     }

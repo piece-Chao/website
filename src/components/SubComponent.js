@@ -44,7 +44,7 @@ export class Paragraph extends React.Component {
 export class CodeBlock extends React.Component {
     render() {
         return(
-            <div className={'highlight'}>
+            <div className={'highlight'} style={{color: '#ddd'}}>
                 <pre>
                     {this.props.content}
                 </pre>
