@@ -11,7 +11,8 @@ const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
 const ReactRedux = lazy (() => import('@/screen/Frame/React/React_redux'));
 const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
 const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
-const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'))
+const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'));
+const NginxBasic = lazy (() => import('@/screen/BackendRelated/Nginx_basic'));
 const MobileView = lazy (() => import('@/screen/Mobile_view'));
 const ExtendView = lazy (() => import('@/screen/Extend/Extend_view'));
 const ExtendArt1 = lazy (() => import('@/screen/Extend/Extend_art1'));
@@ -50,6 +51,7 @@ const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
 const SEO = lazy (() => import('@/screen/SEO'));
 const LifeCycle = lazy (() => import('@/screen/Frame/Vue/LifeCycle'));
 const Responsive = lazy (() => import('@/screen/Frame/Vue/Responsive'));
+const VueStructure = lazy (() => import('@/screen/Frame/Vue/VueStructure'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -116,6 +118,8 @@ class _Router extends Component {
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/SEO' component={props => <SEO {...props} />}/>
                         <Route path='/Nginx_introduction' component={props => <NginxIntroduction {...props} />} />
+                        <Route path='/Nginx_basic' component={props => <NginxBasic {...props} />} />
+                        <Route path='/VueStructure' component={props => <VueStructure {...props} />} />
                     </Switch>
                 </Suspense>
             </ScrollToTop>

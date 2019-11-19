@@ -14,7 +14,8 @@ class Frame_view extends Component {
                 {title: 'Vue动态组件',  path: '/'},
                 {title: 'Axios',  path: '/'},
                 {title: 'vue-router',  path: '/'},
-                {title: 'vuex',  path: '/'}
+                {title: 'vuex',  path: '/'},
+                {title: 'Vue项目搭建', path: '/VueStructure'}
             ],
             reactList: [
                 {title: 'react生命周期',  path: '/'},
