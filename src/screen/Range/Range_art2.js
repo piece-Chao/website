@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '@/screen/Container';
 import { Title, Label, Paragraph, CodeBlock } from '@/components/SubComponent';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Range_art2 extends React.Component {
     render() {
