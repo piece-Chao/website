@@ -230,7 +230,7 @@ export default {
   }
 };
 `}></CodeBlock>
-                    <Paragraph title={'以上，src/api/${business}.js 只负责导出不同 API 的调用函数，而不去关心在不同业务下是怎么调用，传了什么参数。而对于业务页面，不同页面引入 API 资源的方式一致，API 资源可以多处复用。此外 async/await 语法可保证以同步代码的形式书写异步代码逻辑，流程上比 promise 和 callback 都要直观。'}></Paragraph>
+                    <Paragraph title={`以上，src/api/\${business}.js 只负责导出不同 API 的调用函数，而不去关心在不同业务下是怎么调用，传了什么参数。而对于业务页面，不同页面引入 API 资源的方式一致，API 资源可以多处复用。此外 async/await 语法可保证以同步代码的形式书写异步代码逻辑，流程上比 promise 和 callback 都要直观。`}></Paragraph>
                     <Paragraph title={'处理前端资源部署在不同环境（往往是通过域名区分）时，我们把管理域名的任务交给 src/config/hosts 文件。例如：'}></Paragraph> 
 <CodeBlock content={`
 const getEnv = () => {
