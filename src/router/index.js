@@ -111,7 +111,7 @@ class _Router extends Component {
                         <Route path='/Range_art1' component={props => <RangeArt1 {...props} />}/>
                         <Route path='/Range_art2' component={props => <RangeArt2 {...props} />}/>
                         <Route path='/Range_art3' component={props => <RangeArt3 {...props} />}/>
-                        <Route path='/Range_art4' ccomponent={props => <RangeArt4 {...props} />}/>
+                        <Route path='/Range_art4' component={props => <RangeArt4 {...props} />}/>
                         <Route path='/Range_art5' component={props => <RangeArt5 {...props} />}/>
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
