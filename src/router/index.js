@@ -3,7 +3,9 @@ import { Route, Redirect, withRouter, Switch } from 'react-router-dom';
 
 const Home = lazy (() => import('@/screen/Home'));
 const HtmlView = lazy (() => import('@/screen/Html_view'));
-const CssView = lazy (() => import('@/screen/Css_view'));
+const CssView = lazy (() => import('@/screen/Css/Css_view'));
+const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
+const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
 const JsView = lazy (() => import('@/screen/Js_view'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
@@ -45,7 +47,6 @@ const RangeArt2 = lazy (() => import('@/screen/Range/Range_art2'));
 const RangeArt3 = lazy (() => import('@/screen/Range/Range_art3'));
 const RangeArt4 = lazy (() => import('@/screen/Range/Range_art4'));
 const RangeArt5 = lazy (() => import('@/screen/Range/Range_art5'));
-const CssWhyArt = lazy (() => import('@/screen/Css_Why_art'));
 const FileContinuingly = lazy (() => import('@/screen/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
 const SEO = lazy (() => import('@/screen/SEO'));
@@ -72,6 +73,8 @@ class _Router extends Component {
                         <Route path='/Home' component={props => <Home {...props}/>}/>
                         <Route path='/Html_view' component={props => <HtmlView {...props} />}/>
                         <Route path='/Css_view' component={props => <CssView {...props} />}/>
+                        <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
+                        <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
                         <Route path='/Js_view' component={props => <JsView {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
@@ -113,7 +116,6 @@ class _Router extends Component {
                         <Route path='/Range_art3' component={props => <RangeArt3 {...props} />}/>
                         <Route path='/Range_art4' component={props => <RangeArt4 {...props} />}/>
                         <Route path='/Range_art5' component={props => <RangeArt5 {...props} />}/>
-                        <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/SEO' component={props => <SEO {...props} />}/>

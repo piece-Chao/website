@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Css_view extends React.Component {
     constructor() {
@@ -23,11 +24,12 @@ class Css_view extends React.Component {
                 {title: '双飞翼布局'}
             ],
             questionData: [
-                {title: '垂直居中'},
-                {title: 'position问题'},
-                {title: '配置less、sass'},
-                {title: 'rem、em、px'},
-                {title: '清除浮动'},
+                {title: '垂直居中', path: '/'},
+                {title: 'position问题', path: '/'},
+                {title: '配置less、sass', path: '/'},
+                {title: 'rem、em、px', path: '/'},
+                {title: '清除浮动', path: '/'},
+                {title: 'scss入门', path: '/Scss_introduce'}
             ]
         }
     }
@@ -70,7 +72,9 @@ class Css_view extends React.Component {
                                     <List className="my-list">
                                         {this.state.questionData.map((item, index) => {
                                             return (
-                                                <List.Item key={index}>{item.title}</List.Item>
+                                                <List.Item key={index}>
+                                                    <Link style={{display: 'inline-block', width: '100%', height: '100%'}} to={item.path}>{item.title}</Link>
+                                                </List.Item>
                                             )
                                         })}
                                     </List>
