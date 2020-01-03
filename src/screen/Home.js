@@ -11,7 +11,7 @@ class Home extends Component {
             data: ['BG_html', 'BG_css', 'BG_js', 'BG_vue', 'BG_react'],
             imgHeight: 176,
             GridData: [
-                {title: 'HTML', text: 'H', src: 'Html_view'},
+                {title: 'Webpack', text: 'W', src: 'Webpack_view'},
                 {title: 'CSS', text: 'C', src: 'Css_view'},
                 {title: 'JavaScript', text: 'J', src: 'Js_view'},
                 {title: 'HTTP', text: 'H', src: 'Http_view'},
@@ -33,7 +33,7 @@ class Home extends Component {
                 {title: '搜索引擎优化', url: `url(${require('@/assets/images/SEO.jpeg')})`, tip: 'SEO', src: 'SEO'}
             ],
             category: [
-                {title: 'HTML', num: '28篇文章', src: 'Html_view'},
+                {title: 'Webpack', num: '28篇文章', src: 'Webpack_view'},
                 {title: 'CSS', num: '99篇文章', src: 'Css_view'},
                 {title: 'Mobile', num: '7篇文章', src: 'Mobile_view'},
                 {title: 'Flutter', num: '24篇文章', src: '/'},
