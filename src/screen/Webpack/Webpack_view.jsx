@@ -2,21 +2,22 @@ import React from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Html_view extends React.Component {
     constructor() {
         super()
         this.state = {
             LabelData: [
-                {title: 'section'},
-                {title: 'article'},
-                {title: 'nav'},
-                {title: 'header'},
-                {title: 'footer'},
-                {title: 'aside'},
-                {title: 'main'},
-                {title: 'audio'},
-                {title: 'video'}
+                {title: '深入浅出webpack', path: '/Webpack_induction'},
+                {title: 'article', path: ''},
+                {title: 'nav',  path: ''},
+                {title: 'header',  path: ''},
+                {title: 'footer',  path: ''},
+                {title: 'aside',  path: ''},
+                {title: 'main',  path: ''},
+                {title: 'audio',  path: ''},
+                {title: 'video',  path: ''}
             ],
             inputData: [
                 {title: 'color'},
@@ -46,7 +47,9 @@ class Html_view extends React.Component {
                                     <List className="my-list">
                                         {this.state.LabelData.map((item, index) => {
                                             return (
-                                                <List.Item key={index}>{item.title}</List.Item>
+                                                <Link to={item.path} key={index}>
+                                                    <List.Item>{item.title}</List.Item>
+                                                </Link>
                                             )
                                         })}
                                     </List>

@@ -3,6 +3,7 @@ import { Route, Redirect, withRouter, Switch } from 'react-router-dom';
 
 const Home = lazy (() => import('@/screen/Home'));
 const WebpackView = lazy (() => import('@/screen/Webpack/Webpack_view'));
+const WebpackInduction = lazy (() => import('@/screen/Webpack/Webpack_induction'));
 const CssView = lazy (() => import('@/screen/Css/Css_view'));
 const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
 const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
@@ -72,6 +73,7 @@ class _Router extends Component {
                         <Route exact={true} path='/' render={()=><Redirect to='/Home' />}/>
                         <Route path='/Home' component={props => <Home {...props}/>}/>
                         <Route path='/Webpack_view' component={props => <WebpackView {...props} />}/>
+                        <Route path='/Webpack_induction' component={props => <WebpackInduction {...props} />}/>
                         <Route path='/Css_view' component={props => <CssView {...props} />}/>
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
