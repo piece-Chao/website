@@ -9,8 +9,8 @@ class Html_view extends React.Component {
         super()
         this.state = {
             LabelData: [
+                {title: 'webpack基本介绍', path: '/Webpack_basic'},
                 {title: '深入浅出webpack', path: '/Webpack_induction'},
-                {title: 'article', path: ''},
                 {title: 'nav',  path: ''},
                 {title: 'header',  path: ''},
                 {title: 'footer',  path: ''},
