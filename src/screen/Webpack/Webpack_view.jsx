@@ -11,7 +11,7 @@ class Html_view extends React.Component {
             LabelData: [
                 {title: 'webpack基本介绍', path: '/Webpack_basic'},
                 {title: '深入浅出webpack', path: '/Webpack_induction'},
-                {title: 'nav',  path: ''},
+                {title: 'webpack最佳实践',  path: '/Webpack_practice'},
                 {title: 'header',  path: ''},
                 {title: 'footer',  path: ''},
                 {title: 'aside',  path: ''},
