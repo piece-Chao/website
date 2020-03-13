@@ -2,17 +2,18 @@ import React from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Js_view extends React.Component {
     constructor() {
         super()
         this.state = {
             arrayData: [
-                {title: 'Array.from()'},
-                {title: 'Array.of()'},
-                {title: 'find()、findIndex()'},
-                {title: 'includes()'},
-                {title: 'entries()、keys()、value()'}
+                {title: 'babel基本配置', path: '/babel_basic'},
+                {title: 'Array.of()', path: ''},
+                {title: 'find()、findIndex()', path: ''},
+                {title: 'includes()', path: ''},
+                {title: 'entries()、keys()、value()', path: ''}
             ],
             funcData: [
                 {title: '参数的默认值'},
@@ -44,7 +45,9 @@ class Js_view extends React.Component {
                                     <List className="my-list">
                                         {this.state.arrayData.map((item, index) => {
                                             return (
-                                                <List.Item key={index}>{item.title}</List.Item>
+                                                <Link to={item.path} key={index}>
+                                                    <List.Item>{item.title}</List.Item>
+                                                </Link>
                                             )
                                         })}
                                     </List>

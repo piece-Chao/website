@@ -18,7 +18,7 @@ class Home extends Component {
                 {title: 'TypeScript', text: 'T', src: 'Ts_view'},
                 {title: '前端框架', text: '框', src: 'Frame_view'},
                 {title: '后端相关', text: '后', src: 'Java_view'},
-                {title: '移动端', text: '移', src: 'Mobile_view'}
+                {title: '杂谈', text: '杂', src: 'Tattle_view'}
             ],
             RecommendData: [
                 {title: '小程序', desc: '从0到1制作一个微信小程序', route: 'Sprogram_view'},
@@ -35,7 +35,7 @@ class Home extends Component {
             category: [
                 {title: 'Webpack', num: '28篇文章', src: 'Webpack_view'},
                 {title: 'CSS', num: '99篇文章', src: 'Css_view'},
-                {title: 'Mobile', num: '7篇文章', src: 'Mobile_view'},
+                {title: 'Tattle', num: '7篇文章', src: 'Tattle_view'},
                 {title: 'Flutter', num: '24篇文章', src: '/'},
                 {title: 'HTTP', num: '59篇文章', src: 'Http_view'},
                 {title: 'VUE', num: '34篇文章', src: '/'},

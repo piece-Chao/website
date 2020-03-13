@@ -10,7 +10,8 @@ const WebpackPractice = lazy (() => import('@/screen/Webpack/Webpack_practice'))
 const CssView = lazy (() => import('@/screen/Css/Css_view'));
 const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
 const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
-const JsView = lazy (() => import('@/screen/Js_view'));
+const JsView = lazy (() => import('@/screen/JavaScript/Js_view'));
+const BabelBasic = lazy (() => import('@/screen/JavaScript/Babel_basic'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
@@ -19,7 +20,7 @@ const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
 const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
 const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'));
 const NginxBasic = lazy (() => import('@/screen/BackendRelated/Nginx_basic'));
-const MobileView = lazy (() => import('@/screen/Mobile_view'));
+const TattleView = lazy (() => import('@/screen/Tattle_view'));
 const ExtendView = lazy (() => import('@/screen/Extend/Extend_view'));
 const ExtendArt1 = lazy (() => import('@/screen/Extend/Extend_art1'));
 const ExtendArt2 = lazy (() => import('@/screen/Extend/Extend_art2'));
@@ -83,6 +84,7 @@ class _Router extends Component {
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
                         <Route path='/Js_view' component={props => <JsView {...props} />}/>
+                        <Route path='/Babel_basic' component={props => <BabelBasic {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Frame_view' component={props => <FrameView {...props} />}/>
@@ -91,7 +93,7 @@ class _Router extends Component {
                         <Route path='/LifeCycle' component={props => <LifeCycle {...props} />}/>
                         <Route path='/Responsive' component={props => <Responsive {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
-                        <Route path='/Mobile_view' component={props => <MobileView {...props} />}/>
+                        <Route path='/Tattle_view' component={props => <TattleView {...props} />}/>
                         <Route path='/Extend_view' component={props => <ExtendView {...props} />}/>
                         <Route path='/Extend_art1' component={props => <ExtendArt1 {...props} />}/>
                         <Route path='/Extend_art2' component={props => <ExtendArt2 {...props} />}/>
