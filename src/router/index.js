@@ -7,6 +7,7 @@ const WebpackView = lazy (() => import('@/screen/Webpack/Webpack_view'));
 const WebpackInduction = lazy (() => import('@/screen/Webpack/Webpack_induction'));
 const WebpackBasic = lazy (() => import('@/screen/Webpack/Webpack_basic'));
 const WebpackPractice = lazy (() => import('@/screen/Webpack/Webpack_practice'));
+const WebpackDeblockingOne = lazy (() => import('@/screen/Webpack/Webpack_deblocking_one'));
 const CssView = lazy (() => import('@/screen/Css/Css_view'));
 const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
 const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
@@ -80,6 +81,7 @@ class _Router extends Component {
                         <Route path='/Webpack_induction' component={props => <WebpackInduction {...props} />}/>
                         <Route path='/Webpack_basic' component={props => <WebpackBasic {...props} />}/>
                         <Route path='/Webpack_practice' component={props => <WebpackPractice {...props} />}/>
+                        <Route path='/Webpack_deblocking_one' component={props => <WebpackDeblockingOne {...props} />}/>
                         <Route path='/Css_view' component={props => <CssView {...props} />}/>
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
