@@ -13,7 +13,7 @@ class Html_view extends React.Component {
                 {title: '深入浅出webpack', path: '/Webpack_induction'},
                 {title: 'webpack最佳实践',  path: '/Webpack_practice'},
                 {title: '深度解锁Webpack系列(上)',  path: 'Webpack_deblocking_one'},
-                {title: 'footer',  path: ''},
+                {title: '深度解锁Webpack系列(中)',  path: 'Webpack_deblocking_two'},
                 {title: 'aside',  path: ''},
                 {title: 'main',  path: ''},
                 {title: 'audio',  path: ''},
