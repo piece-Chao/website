@@ -14,10 +14,7 @@ class Html_view extends React.Component {
                 {title: 'webpack最佳实践',  path: '/Webpack_practice'},
                 {title: '深度解锁Webpack系列(上)',  path: 'Webpack_deblocking_one'},
                 {title: '深度解锁Webpack系列(中)',  path: 'Webpack_deblocking_two'},
-                {title: 'aside',  path: ''},
-                {title: 'main',  path: ''},
-                {title: 'audio',  path: ''},
-                {title: 'video',  path: ''}
+                {title: '深度解锁Webpack系列(下)',  path: 'Webpack_deblocking_three'}
             ]
         }
     }
