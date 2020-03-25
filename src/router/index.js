@@ -20,6 +20,10 @@ const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
 const ReactRedux = lazy (() => import('@/screen/Frame/React/React_redux'));
 const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
+const LifeCycle = lazy (() => import('@/screen/Frame/Vue/LifeCycle'));
+const Responsive = lazy (() => import('@/screen/Frame/Vue/Responsive'));
+const VueStructure = lazy (() => import('@/screen/Frame/Vue/VueStructure'));
+const VueNextTick = lazy (() => import('@/screen/Frame/Vue/vueNextTick'));
 const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
 const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'));
 const NginxBasic = lazy (() => import('@/screen/BackendRelated/Nginx_basic'));
@@ -58,9 +62,6 @@ const RangeArt5 = lazy (() => import('@/screen/Range/Range_art5'));
 const FileContinuingly = lazy (() => import('@/screen/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
 const SEO = lazy (() => import('@/screen/SEO'));
-const LifeCycle = lazy (() => import('@/screen/Frame/Vue/LifeCycle'));
-const Responsive = lazy (() => import('@/screen/Frame/Vue/Responsive'));
-const VueStructure = lazy (() => import('@/screen/Frame/Vue/VueStructure'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -89,15 +90,16 @@ class _Router extends Component {
                         <Route path='/Css_view' component={props => <CssView {...props} />}/>
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
-                        <Route path='/Js_view' component={props => <JsView {...props} />}/>
-                        <Route path='/Babel_basic' component={props => <BabelBasic {...props} />}/>
-                        <Route path='/Http_view' component={props => <HttpView {...props} />}/>
-                        <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Frame_view' component={props => <FrameView {...props} />}/>
                         <Route path='/React_redux' component={props => <ReactRedux {...props} />}/>
                         <Route path='/Redux_saga' component={props => <ReduxSaga {...props} />}/>
                         <Route path='/LifeCycle' component={props => <LifeCycle {...props} />}/>
                         <Route path='/Responsive' component={props => <Responsive {...props} />}/>
+                        <Route path='/vue_nextTick' component={props => <VueNextTick {...props} />}/>
+                        <Route path='/Js_view' component={props => <JsView {...props} />}/>
+                        <Route path='/Babel_basic' component={props => <BabelBasic {...props} />}/>
+                        <Route path='/Http_view' component={props => <HttpView {...props} />}/>
+                        <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
                         <Route path='/Tattle_view' component={props => <TattleView {...props} />}/>
                         <Route path='/Extend_view' component={props => <ExtendView {...props} />}/>
