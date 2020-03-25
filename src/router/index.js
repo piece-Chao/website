@@ -23,7 +23,7 @@ const ReduxSaga = lazy (() => import('@/screen/Frame/React/Redux_saga'));
 const LifeCycle = lazy (() => import('@/screen/Frame/Vue/LifeCycle'));
 const Responsive = lazy (() => import('@/screen/Frame/Vue/Responsive'));
 const VueStructure = lazy (() => import('@/screen/Frame/Vue/VueStructure'));
-const VueNextTick = lazy (() => import('@/screen/Frame/Vue/vueNextTick'));
+const VueNextTick = lazy (() => import('@/screen/Frame/Vue/VueNextTick'));
 const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
 const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'));
 const NginxBasic = lazy (() => import('@/screen/BackendRelated/Nginx_basic'));
