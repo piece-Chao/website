@@ -12,9 +12,7 @@ class Frame_view extends Component {
                 {title: 'Vue生命周期', path: '/LifeCycle'},
                 {title: 'Vue响应式原理',  path: '/Responsive'},
                 {title: 'Vue动态组件',  path: '/'},
-                {title: 'Axios',  path: '/'},
-                {title: 'vue-router',  path: '/'},
-                {title: 'vuex',  path: '/'},
+                {title: '探索Vue.nextTick实现原理',  path: '/vue_nextTick'},
                 {title: 'Vue项目搭建', path: '/VueStructure'}
             ],
             reactList: [
