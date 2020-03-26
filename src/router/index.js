@@ -15,6 +15,7 @@ const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
 const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
 const JsView = lazy (() => import('@/screen/JavaScript/Js_view'));
 const BabelBasic = lazy (() => import('@/screen/JavaScript/Babel_basic'));
+const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
@@ -98,6 +99,7 @@ class _Router extends Component {
                         <Route path='/vue_nextTick' component={props => <VueNextTick {...props} />}/>
                         <Route path='/Js_view' component={props => <JsView {...props} />}/>
                         <Route path='/Babel_basic' component={props => <BabelBasic {...props} />}/>
+                        <Route path='/precision' component={props => <Precision {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
