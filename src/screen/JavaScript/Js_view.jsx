@@ -10,7 +10,7 @@ class Js_view extends React.Component {
         this.state = {
             arrayData: [
                 {title: 'babel基本配置', path: '/babel_basic'},
-                {title: 'Array.of()', path: ''},
+                {title: 'JavaScript 深入之浮点数精度', path: 'precision'},
                 {title: 'find()、findIndex()', path: ''},
                 {title: 'includes()', path: ''},
                 {title: 'entries()、keys()、value()', path: ''}
