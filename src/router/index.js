@@ -16,6 +16,8 @@ const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
 const JsView = lazy (() => import('@/screen/JavaScript/Js_view'));
 const BabelBasic = lazy (() => import('@/screen/JavaScript/Babel_basic'));
 const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
+const FileContinuingly = lazy (() => import('@/screen/JavaScript/File_Continuingly'));
+const FunctionalCoding = lazy (() => import('@/screen/JavaScript/Functional_Coding'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
@@ -28,7 +30,7 @@ const VueNextTick = lazy (() => import('@/screen/Frame/Vue/VueNextTick'));
 const JavaView = lazy (() => import('@/screen/BackendRelated/Java_view'));
 const NginxIntroduction = lazy (() => import('@/screen/BackendRelated/Nginx_introduction'));
 const NginxBasic = lazy (() => import('@/screen/BackendRelated/Nginx_basic'));
-const TattleView = lazy (() => import('@/screen/Tattle_view'));
+const TattleView = lazy (() => import('@/screen/Tattle/Tattle_view'));
 const ExtendView = lazy (() => import('@/screen/Extend/Extend_view'));
 const ExtendArt1 = lazy (() => import('@/screen/Extend/Extend_art1'));
 const ExtendArt2 = lazy (() => import('@/screen/Extend/Extend_art2'));
@@ -60,9 +62,7 @@ const RangeArt2 = lazy (() => import('@/screen/Range/Range_art2'));
 const RangeArt3 = lazy (() => import('@/screen/Range/Range_art3'));
 const RangeArt4 = lazy (() => import('@/screen/Range/Range_art4'));
 const RangeArt5 = lazy (() => import('@/screen/Range/Range_art5'));
-const FileContinuingly = lazy (() => import('@/screen/File_Continuingly'));
-const FunctionalCoding = lazy (() => import('@/screen/Functional_Coding'));
-const SEO = lazy (() => import('@/screen/SEO'));
+const SEO = lazy (() => import('@/screen/Tattle/SEO'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {

@@ -10,9 +10,9 @@ class Js_view extends React.Component {
         this.state = {
             arrayData: [
                 {title: 'babel基本配置', path: '/babel_basic'},
-                {title: 'JavaScript 深入之浮点数精度', path: 'precision'},
-                {title: 'find()、findIndex()', path: ''},
-                {title: 'includes()', path: ''},
+                {title: 'JavaScript 深入之浮点数精度', path: '/precision'},
+                {title: 'JavaScript函数式编程', path: '/Functional_Coding'},
+                {title: '文件断点续传', path: '/File_Continuingly'},
                 {title: 'entries()、keys()、value()', path: ''}
             ],
             funcData: [
@@ -41,35 +41,13 @@ class Js_view extends React.Component {
                     <main>
                         <div>
                             <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="数组相关">
+                                <Accordion.Panel header="JS领域">
                                     <List className="my-list">
                                         {this.state.arrayData.map((item, index) => {
                                             return (
                                                 <Link to={item.path} key={index}>
                                                     <List.Item>{item.title}</List.Item>
                                                 </Link>
-                                            )
-                                        })}
-                                    </List>
-                                </Accordion.Panel>
-                            </Accordion>
-                            <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="函数相关">
-                                    <List className="my-list">
-                                        {this.state.funcData.map((item, index) => {
-                                            return (
-                                                <List.Item key={index}>{item.title}</List.Item>
-                                            )
-                                        })}
-                                    </List>
-                                </Accordion.Panel>
-                            </Accordion>
-                            <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="常见问题">
-                                    <List className="my-list">
-                                        {this.state.objData.map((item, index) => {
-                                            return (
-                                                <List.Item key={index}>{item.title}</List.Item>
                                             )
                                         })}
                                     </List>

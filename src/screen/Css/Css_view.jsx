@@ -8,12 +8,12 @@ class Css_view extends React.Component {
     constructor() {
         super()
         this.state = {
-            attributeData: [
-                {title: '圆角'},
-                {title: '阴影'},
-                {title: '渐变'},
-                {title: '过渡'},
-                {title: '动画'}
+            questionData: [
+                {title: 'css why', path: '/Css_Why_art'},
+                {title: 'scss入门', path: '/Scss_introduce'},
+                {title: '渐变', path: '/'},
+                {title: '过渡', path: '/'},
+                {title: '动画', path: '/'}
             ],
             boxData: [
                 {title: '标准盒模型'},
@@ -22,14 +22,6 @@ class Css_view extends React.Component {
                 {title: '栅格布局'},
                 {title: '圣杯布局'},
                 {title: '双飞翼布局'}
-            ],
-            questionData: [
-                {title: '垂直居中', path: '/'},
-                {title: 'position问题', path: '/'},
-                {title: '配置less、sass', path: '/'},
-                {title: 'rem、em、px', path: '/'},
-                {title: '清除浮动', path: '/'},
-                {title: 'scss入门', path: '/Scss_introduce'}
             ]
         }
     }
@@ -45,28 +37,6 @@ class Css_view extends React.Component {
                     </div>
                     <main>
                         <div>
-                            <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="CSS3 新特性">
-                                    <List className="my-list">
-                                        {this.state.attributeData.map((item, index) => {
-                                            return (
-                                                <List.Item key={index}>{item.title}</List.Item>
-                                            )
-                                        })}
-                                    </List>
-                                </Accordion.Panel>
-                            </Accordion>
-                            <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="布局">
-                                    <List className="my-list">
-                                        {this.state.boxData.map((item, index) => {
-                                            return (
-                                                <List.Item key={index}>{item.title}</List.Item>
-                                            )
-                                        })}
-                                    </List>
-                                </Accordion.Panel>
-                            </Accordion>
                             <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="常见问题">
                                     <List className="my-list">

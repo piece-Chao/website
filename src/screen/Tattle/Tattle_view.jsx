@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '@/screen/Container';
 import '@/assets/style/level2_style.less';
 import { Accordion, List } from 'antd-mobile';
+import { Link } from 'react-router-dom';
 
 class Tattle_view extends React.Component {
     constructor() {
@@ -10,17 +11,17 @@ class Tattle_view extends React.Component {
             accordionList: [{
                 title: '科技',
                 basicsList: [
-                    {title: 'babel基本配置'}
+                    {title: 'SEO优化', path: '/SEO'}
                 ]
             }, {
                 title: '数码',
                 basicsList: [
-                    {title: 'babel基本配置'}
+                    {title: 'babel基本配置', path: '/'}
                 ]
             }, {
                 title: '金融',
                 basicsList: [
-                    {title: 'babel基本配置'}
+                    {title: 'babel基本配置', path: '/'}
                 ]
             }]
         }
@@ -43,7 +44,9 @@ class Tattle_view extends React.Component {
                                             <List className="my-list">
                                                 {item.basicsList.map((basic, basicIndex) => {
                                                     return (
-                                                        <List.Item key={basicIndex}>{basic.title}</List.Item>
+                                                        <Link to={basic.path} key={basicIndex}>
+                                                            <List.Item>{basic.title}</List.Item>
+                                                        </Link>
                                                     )
                                                 })}
                                             </List>
