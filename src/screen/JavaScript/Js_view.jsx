@@ -8,24 +8,12 @@ class Js_view extends React.Component {
     constructor() {
         super()
         this.state = {
-            arrayData: [
+            data: [
                 {title: 'babel基本配置', path: '/babel_basic'},
                 {title: 'JavaScript 深入之浮点数精度', path: '/precision'},
                 {title: 'JavaScript函数式编程', path: '/Functional_Coding'},
                 {title: '文件断点续传', path: '/File_Continuingly'},
-                {title: 'entries()、keys()、value()', path: ''}
-            ],
-            funcData: [
-                {title: '参数的默认值'},
-                {title: 'rest 参数'},
-                {title: '箭头函数'},
-                {title: '尾调用优化'}
-            ],
-            objData: [
-                {title: '属性的简洁表示法'},
-                {title: '属性的可枚举性和遍历'},
-                {title: 'super 关键字'},
-                {title: '对象的扩展运算符'}
+                {title: 'defineProperty 与 proxy', path: '/Proxy'}
             ]
         }
     }
@@ -43,7 +31,7 @@ class Js_view extends React.Component {
                             <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="JS领域">
                                     <List className="my-list">
-                                        {this.state.arrayData.map((item, index) => {
+                                        {this.state.data.map((item, index) => {
                                             return (
                                                 <Link to={item.path} key={index}>
                                                     <List.Item>{item.title}</List.Item>
