@@ -13,7 +13,8 @@ class Js_view extends React.Component {
                 {title: 'JavaScript 深入之浮点数精度', path: '/precision'},
                 {title: 'JavaScript函数式编程', path: '/Functional_Coding'},
                 {title: '文件断点续传', path: '/File_Continuingly'},
-                {title: 'defineProperty 与 proxy', path: '/Proxy'}
+                {title: 'defineProperty 与 proxy', path: '/proxy'},
+                {title: '我们来聊聊 Promise', path: '/promise'}
             ]
         }
     }
