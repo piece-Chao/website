@@ -19,6 +19,7 @@ const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
 const FileContinuingly = lazy (() => import('@/screen/JavaScript/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/JavaScript/Functional_Coding'));
 const Proxy = lazy (() => import('@/screen/JavaScript/Proxy'));
+const Promise = lazy (() => import('@/screen/JavaScript/Promise'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
@@ -102,6 +103,10 @@ class _Router extends Component {
                         <Route path='/Js_view' component={props => <JsView {...props} />}/>
                         <Route path='/Babel_basic' component={props => <BabelBasic {...props} />}/>
                         <Route path='/precision' component={props => <Precision {...props} />}/>
+                        <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
+                        <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
+                        <Route path='/proxy' component={props => <Proxy {...props} />}/>
+                        <Route path='/promise' component={props => <Promise {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
@@ -137,9 +142,6 @@ class _Router extends Component {
                         <Route path='/Range_art3' component={props => <RangeArt3 {...props} />}/>
                         <Route path='/Range_art4' component={props => <RangeArt4 {...props} />}/>
                         <Route path='/Range_art5' component={props => <RangeArt5 {...props} />}/>
-                        <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
-                        <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
-                        <Route path='/Proxy' component={props => <Proxy {...props} />}/>
                         <Route path='/SEO' component={props => <SEO {...props} />}/>
                         <Route path='/Nginx_introduction' component={props => <NginxIntroduction {...props} />} />
                         <Route path='/Nginx_basic' component={props => <NginxBasic {...props} />} />
