@@ -19,7 +19,7 @@ const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
 const FileContinuingly = lazy (() => import('@/screen/JavaScript/File_Continuingly'));
 const FunctionalCoding = lazy (() => import('@/screen/JavaScript/Functional_Coding'));
 const Proxy = lazy (() => import('@/screen/JavaScript/Proxy'));
-const Promise = lazy (() => import('@/screen/JavaScript/Promise'));
+const Promise_art = lazy (() => import('@/screen/JavaScript/Promise_art'));
 const HttpView = lazy (() => import('@/screen/Http_view'));
 const TsView = lazy (() => import('@/screen/Ts_view'));
 const FrameView = lazy (() => import('@/screen/Frame/Frame_view'));
@@ -106,7 +106,7 @@ class _Router extends Component {
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/proxy' component={props => <Proxy {...props} />}/>
-                        <Route path='/promise' component={props => <Promise {...props} />}/>
+                        <Route path='/promise1' component={props => <Promise_art {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
