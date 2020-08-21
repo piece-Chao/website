@@ -17,12 +17,12 @@ class Js_view extends React.Component {
                 {title: '我们来聊聊 Promise', path: '/promise'}
             ],
             list: [
-                {title: '手写map方法', path: '/array_map'},
-                {title: '手写reduce方法', path: '/array_reduce'},
-                {title: '手写splice方法', path: '/array_splice'},
-                {title: '手写filter方法', path: '/array_filter'},
-                {title: '手写push、pop方法', path: '/array_push_pop'},
-                {title: '手写sort方法', path: '/array_sort'},
+                {title: '手写map方法', path: '/map'},
+                {title: 'JavaScript 深入之浮点数精度', path: '/precision'},
+                {title: 'JavaScript函数式编程', path: '/Functional_Coding'},
+                {title: '文件断点续传', path: '/File_Continuingly'},
+                {title: 'defineProperty 与 proxy', path: '/proxy'},
+                {title: '我们来聊聊 Promise', path: '/promise'}
             ]
         }
     }
@@ -37,7 +37,7 @@ class Js_view extends React.Component {
                     </div>
                     <main>
                         <div>
-                            <Accordion defaultActiveKey={['0', '1']} className="my-accordion">
+                            <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="JS领域">
                                     <List className="my-list">
                                         {this.state.data.map((item, index) => {
