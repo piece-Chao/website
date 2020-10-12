@@ -15,14 +15,6 @@ class Js_view extends React.Component {
                 {title: '文件断点续传', path: '/File_Continuingly'},
                 {title: 'defineProperty 与 proxy', path: '/proxy'},
                 {title: '我们来聊聊 Promise', path: '/promise'}
-            ],
-            list: [
-                {title: '手写map方法', path: '/array_map'},
-                {title: '手写reduce方法', path: '/array_reduce'},
-                {title: '手写splice方法', path: '/array_splice'},
-                {title: '手写filter方法', path: '/array_filter'},
-                {title: '手写push、pop方法', path: '/array_push_pop'},
-                {title: '手写sort方法', path: '/array_sort'},
             ]
         }
     }
@@ -37,21 +29,10 @@ class Js_view extends React.Component {
                     </div>
                     <main>
                         <div>
-                            <Accordion defaultActiveKey={['0', '1']} className="my-accordion">
+                            <Accordion defaultActiveKey="0" className="my-accordion">
                                 <Accordion.Panel header="JS领域">
                                     <List className="my-list">
                                         {this.state.data.map((item, index) => {
-                                            return (
-                                                <Link to={item.path} key={index}>
-                                                    <List.Item>{item.title}</List.Item>
-                                                </Link>
-                                            )
-                                        })}
-                                    </List>
-                                </Accordion.Panel>
-                                <Accordion.Panel header="手写Array原生方法">
-                                    <List className="my-list">
-                                        {this.state.list.map((item, index) => {
                                             return (
                                                 <Link to={item.path} key={index}>
                                                     <List.Item>{item.title}</List.Item>
