@@ -67,6 +67,7 @@ const RangeArt5 = lazy (() => import('@/screen/Range/Range_art5'));
 const SEO = lazy (() => import('@/screen/Tattle/SEO'));
 const ArrayMap = lazy (() => import('@/screen/JavaScript/Array/Array_map'));
 const ArrayReduce = lazy (() => import('@/screen/JavaScript/Array/Array_reduce'));
+const ArraySplice = lazy (() => import('@/screen/JavaScript/Array/Array_splice'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -149,6 +150,7 @@ class _Router extends Component {
                         <Route path='/Nginx_basic' component={props => <NginxBasic {...props} />} />
                         <Route path='/Array_map' component={props => <ArrayMap {...props} />} />
                         <Route path='/Array_reduce' component={props => <ArrayReduce {...props} />} />
+                        <Route path='/Array_splice' component={props => <ArraySplice {...props} />} />
                     </Switch>
                 </Suspense>
             </ScrollToTop>
