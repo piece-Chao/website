@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/static/js/1.71105c58.chunk.js"
   },
   {
-    "revision": "0fd1b84dd888f4675190",
+    "revision": "8ecb3c6b0bb1d0ea3277",
     "url": "/static/css/main.2b8a8188.chunk.css"
   },
   {
-    "revision": "0fd1b84dd888f4675190",
-    "url": "/static/js/main.0fd1b84d.chunk.js"
+    "revision": "8ecb3c6b0bb1d0ea3277",
+    "url": "/static/js/main.8ecb3c6b.chunk.js"
   },
   {
     "revision": "4d9be248f6eaef7b5ab3",
@@ -936,7 +936,7 @@ self.__precacheManifest = [
     "url": "/static/media/JS_ECMA_grammer_scope12.84334f8f.jpg"
   },
   {
-    "revision": "d2f30cd19d11bcd976d4afcc406b41c5",
+    "revision": "bde96b06ff421867c8a65d92b7d32ce2",
     "url": "/index.html"
   }
 ];
