@@ -110,7 +110,7 @@ class _Router extends Component {
                         <Route path='/File_Continuingly' component={props => <FileContinuingly {...props} />}/>
                         <Route path='/Functional_Coding' component={props => <FunctionalCoding {...props} />}/>
                         <Route path='/proxy' component={props => <Proxy {...props} />}/>
-                        <Route path='/promise1' component={props => <PromiseArt {...props} />}/>
+                        <Route path='/promise' component={props => <PromiseArt {...props} />}/>
                         <Route path='/Http_view' component={props => <HttpView {...props} />}/>
                         <Route path='/Ts_view' component={props => <TsView {...props} />}/>
                         <Route path='/Java_view' component={props => <JavaView {...props} />}/>
