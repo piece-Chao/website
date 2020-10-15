@@ -68,6 +68,7 @@ const SEO = lazy (() => import('@/screen/Tattle/SEO'));
 const ArrayMap = lazy (() => import('@/screen/JavaScript/Array/Array_map'));
 const ArrayReduce = lazy (() => import('@/screen/JavaScript/Array/Array_reduce'));
 const ArraySplice = lazy (() => import('@/screen/JavaScript/Array/Array_splice'));
+const ArrayFilter = lazy (() => import('@/screen/JavaScript/Array/Array_filter'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -151,6 +152,7 @@ class _Router extends Component {
                         <Route path='/Array_map' component={props => <ArrayMap {...props} />} />
                         <Route path='/Array_reduce' component={props => <ArrayReduce {...props} />} />
                         <Route path='/Array_splice' component={props => <ArraySplice {...props} />} />
+                        <Route path='/Array_filter' component={props => <ArrayFilter {...props} />} />
                     </Switch>
                 </Suspense>
             </ScrollToTop>
