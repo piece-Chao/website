@@ -21,7 +21,7 @@ class Js_view extends React.Component {
                 {title: '手写reduce方法', path: '/array_reduce'},
                 {title: '手写splice方法', path: '/array_splice'},
                 {title: '手写filter方法', path: '/array_filter'},
-                {title: '手写push、pop方法', path: '/array_push_pop'},
+                {title: '手写push、pop方法', path: '/array_push_and_pop'},
                 {title: '手写sort方法', path: '/array_sort'},
             ]
         }
