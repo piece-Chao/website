@@ -70,6 +70,7 @@ const ArrayReduce = lazy (() => import('@/screen/JavaScript/Array/Array_reduce')
 const ArraySplice = lazy (() => import('@/screen/JavaScript/Array/Array_splice'));
 const ArrayFilter = lazy (() => import('@/screen/JavaScript/Array/Array_filter'));
 const ArrayPushAndPop = lazy (() => import('@/screen/JavaScript/Array/Array_push_and_pop'));
+const ArraySort = lazy (() => import('@/screen/JavaScript/Array/Array_sort'));
 
 class ScrollToTop extends Component {
     componentDidUpdate() {
@@ -155,6 +156,7 @@ class _Router extends Component {
                         <Route path='/Array_splice' component={props => <ArraySplice {...props} />} />
                         <Route path='/Array_filter' component={props => <ArrayFilter {...props} />} />
                         <Route path='/Array_push_and_pop' component={props => <ArrayPushAndPop {...props} />} />
+                        <Route path='/Array_sort' component={props => <ArraySort {...props} />} />
                     </Switch>
                 </Suspense>
             </ScrollToTop>
