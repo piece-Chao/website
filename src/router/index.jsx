@@ -13,6 +13,7 @@ const WebpackDeblockingThree = lazy (() => import('@/screen/Webpack/Webpack_debl
 const CssView = lazy (() => import('@/screen/Css/Css_view'));
 const CssWhyArt = lazy (() => import('@/screen/Css/Css_Why_art'));
 const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
+const FlexArt = lazy (() => import('@/screen/Css/Flex_art'));
 const JsView = lazy (() => import('@/screen/JavaScript/Js_view'));
 const BabelBasic = lazy (() => import('@/screen/JavaScript/Babel_basic'));
 const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
@@ -99,6 +100,7 @@ class _Router extends Component {
                         <Route path='/Css_view' component={props => <CssView {...props} />}/>
                         <Route path='/Css_Why_art' component={props => <CssWhyArt {...props} />}/>
                         <Route path='/Scss_introduce' component={props => <ScssIntroduce {...props} />}/>
+                        <Route path='/Flex_art' component={props => <FlexArt {...props} />}/>
                         <Route path='/Frame_view' component={props => <FrameView {...props} />}/>
                         <Route path='/React_redux' component={props => <ReactRedux {...props} />}/>
                         <Route path='/Redux_saga' component={props => <ReduxSaga {...props} />}/>
