@@ -11,7 +11,7 @@ class Css_view extends React.Component {
             questionData: [
                 {title: 'css why', path: '/Css_Why_art'},
                 {title: 'scss入门', path: '/Scss_introduce'},
-                {title: '渐变', path: '/'},
+                {title: '深入理解 flex', path: '/Flex_art'},
                 {title: '过渡', path: '/'},
                 {title: '动画', path: '/'}
             ],
