@@ -13,7 +13,7 @@ class Css_view extends React.Component {
                 {title: 'scss入门', path: '/Scss_introduce'},
                 {title: '深入理解 flex', path: '/Flex_art'},
                 {title: '过渡', path: '/'},
-                {title: '动画', path: '/'}
+                {title: '动画', path: '/Animation_art'}
             ],
             boxData: [
                 {title: '标准盒模型'},

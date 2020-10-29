@@ -7,6 +7,8 @@
         [
             "@babel/plugin-transform-runtime",
             {
+                "libraryName": "antd-mobile",
+                "style": "css",
                 "corejs": 3
             }
             // "import",

@@ -70,3 +70,31 @@ export class ListItem extends React.Component {
         )
     }
 }
+
+export class RenderTable extends React.Component {
+    render() {
+        const { header, data } = this.props;
+        return(
+            <div className={'renderTable'}>
+                <table>
+                    <thead>
+                        <tr>
+                            { header.map((item, index) => <th key={index}>{item}</th>) }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        { data.map((list, index) => {
+                            return (
+                                <tr key={index}>
+                                    {
+                                        list.map((item, _index) => <td key={_index}>{item}</td>)
+                                    }
+                                </tr>
+                            )
+                        }) }
+                    </tbody>
+                </table>
+            </div>
+        )
+    }
+}
