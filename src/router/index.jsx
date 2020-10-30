@@ -16,6 +16,8 @@ const ScssIntroduce = lazy (() => import('@/screen/Css/Scss_introduce'));
 const FlexArt = lazy (() => import('@/screen/Css/Flex_art'));
 const AnimationArt = lazy (() => import('@/screen/Css/Animation_art'));
 const TransitionArt = lazy (() => import('@/screen/Css/Transition_art'));
+const GeneralUnit = lazy (() => import('@/screen/Css/General_unit'));
+const CalculatingUnit = lazy (() => import('@/screen/Css/Calculating_unit'));
 const JsView = lazy (() => import('@/screen/JavaScript/Js_view'));
 const BabelBasic = lazy (() => import('@/screen/JavaScript/Babel_basic'));
 const Precision = lazy (() => import('@/screen/JavaScript/Precision'));
@@ -105,6 +107,8 @@ class _Router extends Component {
                         <Route path='/Flex_art' component={props => <FlexArt {...props} />}/>
                         <Route path='/Animation_art' component={props => <AnimationArt {...props} />}/>
                         <Route path='/Transition_art' component={props => <TransitionArt {...props} />}/>
+                        <Route path='/general_unit' component={props => <GeneralUnit {...props} />}/>
+                        <Route path='/calculating_unit' component={props => <CalculatingUnit {...props} />}/>
                         <Route path='/Frame_view' component={props => <FrameView {...props} />}/>
                         <Route path='/React_redux' component={props => <ReactRedux {...props} />}/>
                         <Route path='/Redux_saga' component={props => <ReduxSaga {...props} />}/>
