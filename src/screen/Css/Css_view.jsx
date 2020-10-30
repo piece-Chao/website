@@ -16,12 +16,8 @@ class Css_view extends React.Component {
                 {title: '动画', path: '/Animation_art'}
             ],
             boxData: [
-                {title: '标准盒模型'},
-                {title: 'flex'},
-                {title: 'FBC'},
-                {title: '栅格布局'},
-                {title: '圣杯布局'},
-                {title: '双飞翼布局'}
+                {title: 'css中的px、em、rem 详解', path: '/general_unit'},
+                {title: '使用calc()计算宽高（vw/vh）', path: '/calculating_unit'},
             ]
         }
     }
@@ -37,10 +33,21 @@ class Css_view extends React.Component {
                     </div>
                     <main>
                         <div>
-                            <Accordion defaultActiveKey="0" className="my-accordion">
-                                <Accordion.Panel header="常见问题">
+                            <Accordion activeKey={['0', '1']} className="my-accordion">
+                                <Accordion.Panel key="0" header="常见问题">
                                     <List className="my-list">
                                         {this.state.questionData.map((item, index) => {
+                                            return (
+                                                <List.Item key={index}>
+                                                    <Link style={{display: 'inline-block', width: '100%', height: '100%'}} to={item.path}>{item.title}</Link>
+                                                </List.Item>
+                                            )
+                                        })}
+                                    </List>
+                                </Accordion.Panel>
+                                <Accordion.Panel key="1" header="布局单位">
+                                    <List className="my-list">
+                                        {this.state.boxData.map((item, index) => {
                                             return (
                                                 <List.Item key={index}>
                                                     <Link style={{display: 'inline-block', width: '100%', height: '100%'}} to={item.path}>{item.title}</Link>
