@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '@/screen/Container';
-import { Title, Label, Paragraph, CodeBlock, ListItem, RenderTable } from '@/components/SubComponent';
+import { Title, Label, Paragraph, CodeBlock, ListItem } from '@/components/SubComponent';
 
 class General_unit extends React.Component {
   render() {
