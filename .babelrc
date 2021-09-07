@@ -1,0 +1,22 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "libraryName": "antd-mobile",
+                "style": "css",
+                "corejs": 3
+            }
+            // "import",
+            // {
+            //     "libraryName": "antd-mobile",
+            //     "style": "css",
+            //     "corejs": 3
+            // }
+        ]
+    ]    
+}
